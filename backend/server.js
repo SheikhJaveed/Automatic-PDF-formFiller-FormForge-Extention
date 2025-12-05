@@ -1,5 +1,5 @@
 const express = require('express');
-const { PDFDocument, StandardFonts, rgb } = require('pdf-lib');
+const { PDFDocument, StandardFonts, PDFName, PDFString, TextAlignment, rgb } = require('pdf-lib');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
@@ -27,20 +27,13 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use('/files', express.static(UPLOADS_DIR));
 
-// --- HELPER: Sanitize Field Names ---
-const sanitizeFieldName = (text) => {
-    if (!text) return `field_${Date.now()}`;
-    // Remove dots, slashes, and non-alphanumeric chars
-    return text.replace(/\./g, '').replace(/[^\w\s-]/g, '').trim();
-};
-
 // --- ROUTE 1: UPLOAD PDF ---
 app.post('/upload', upload.single('pdf'), (req, res) => {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
     res.json({ filename: req.file.filename });
 });
 
-// --- ROUTE 2: PROCESS PDF (With Font Fix) ---
+// --- ROUTE 2: PROCESS PDF (Using YOUR Custom Logic) ---
 app.post('/process-pdf', async (req, res) => {
     console.log("Received request at /process-pdf");
 
@@ -59,11 +52,11 @@ app.post('/process-pdf', async (req, res) => {
         const existingPdfBytes = fs.readFileSync(filePath);
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         
-        // 1. EMBED FONT
+        // Embed Font
         const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
         const form = pdfDoc.getForm();
 
-        // CONSTANT: Matches App.jsx width
+        // CONSTANT: Matches Frontend Width
         const FRONTEND_WIDTH = 800;
 
         fields.forEach((fieldData) => {
@@ -71,60 +64,95 @@ app.post('/process-pdf', async (req, res) => {
             if (pageIndex >= pdfDoc.getPageCount()) return;
             
             const page = pdfDoc.getPage(pageIndex);
-            const { width: pageWidth, height: pageHeight } = page.getSize();
+            
+            // --- YOUR SCALING LOGIC ---
+            const { width: pdfWidth, height: pdfHeight } = page.getSize();
+            const scaleFactor = pdfWidth / FRONTEND_WIDTH;
 
-            // Calculate Scale
-            const scaleFactor = pageWidth / FRONTEND_WIDTH;
+            const scaledX = fieldData.x * scaleFactor;
+            const scaledY = fieldData.y * scaleFactor;
+            const scaledW = fieldData.w * scaleFactor;
+            const scaledH = fieldData.h * scaleFactor;
 
-            // Scale Coordinates
-            const pdfX = fieldData.x * scaleFactor;
-            const pdfW = fieldData.w * scaleFactor;
-            const pdfH = fieldData.h * scaleFactor;
-            const pdfY = pageHeight - (fieldData.y * scaleFactor) - pdfH;
+            // PDF Coordinate Calculation (Bottom-Left Origin)
+            const pdfY = pdfHeight - scaledY - scaledH;
 
-            // Sanitize Name
-            let fieldName = sanitizeFieldName(fieldData.name || fieldData.id);
+            // --- FIELD NAME HANDLING ---
+            // We attempt to use the EXACT name. 
+            // If it ends in a dot, we append a space to prevent the crash.
+            let fieldName = fieldData.name || fieldData.id;
+            
+            // Prevent Duplicate Names Crash
             if (form.getFields().some(f => f.getName() === fieldName)) {
-                fieldName = `${fieldName}_${Math.random().toString(36).substr(2, 5)}`;
+                fieldName = `${fieldName} (Copy)`; // Simple suffix
             }
 
             if (fieldData.type === 'checkbox') {
-                const checkBox = form.createCheckBox(fieldName);
-                checkBox.addToPage(page, {
-                    x: pdfX,
-                    y: pdfY,
-                    width: pdfW,
-                    height: pdfH,
-                });
-                if (fieldData.required) checkBox.setRequired();
+                try {
+                    const checkBox = form.createCheckBox(fieldName);
+                    if (fieldData.required) checkBox.enableRequired();
+                    
+                    checkBox.addToPage(page, {
+                        x: scaledX,
+                        y: pdfY,
+                        width: scaledW,
+                        height: scaledH,
+                        borderWidth: 0,
+                        backgroundColor: rgb(1, 1, 1), // White background
+                    });
+                } catch (err) {
+                    console.error(`Skipping Checkbox "${fieldName}": ${err.message}`);
+                }
             } else {
-                // --- TEXT FIELD LOGIC ---
-                const textField = form.createTextField(fieldName);
-                
-                // Add to page first
-                textField.addToPage(page, {
-                    x: pdfX,
-                    y: pdfY,
-                    width: pdfW,
-                    height: pdfH,
-                });
+                // TEXT FIELD LOGIC
+                try {
+                    let textField;
+                    try {
+                        textField = form.createTextField(fieldName);
+                    } catch (err) {
+                        // FALLBACK: If "Periods" error, append a space to make it valid but keep the dot
+                        if (err.message.includes('Periods in PDF field names')) {
+                            console.warn(`Fixing invalid name: "${fieldName}" -> "${fieldName} "`);
+                            textField = form.createTextField(fieldName + ' ');
+                        } else {
+                            throw err;
+                        }
+                    }
 
-                // --- CRITICAL FIX SEQUENCE ---
-                // 1. Set temporary text (Required for updateAppearances to work)
-                textField.setText(' '); 
-                
-                // 2. Update Appearances with the Font (Creates the /DA entry)
-                textField.updateAppearances(helveticaFont);
-                
-                // 3. Set Font Size (Now safe because /DA exists)
-                const rawFontSize = fieldData.fontSize || 11; 
-                const scaledFontSize = rawFontSize * scaleFactor;
-                textField.setFontSize(scaledFontSize);
+                    textField.setText(''); 
 
-                // 4. Clear the temporary text
-                textField.setText('');
+                    // --- YOUR FONT SIZE & DA LOGIC ---
+                    const fontSize = (fieldData.fontSize || 11) * scaleFactor;
+                    
+                    // Manually set Default Appearance string (Your old code logic)
+                    const daString = `/Helv ${fontSize} Tf 0 g`;
+                    textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
 
-                if (fieldData.required) textField.setRequired();
+                    // --- ALIGNMENT ---
+                    if (fieldData.align) {
+                        switch (fieldData.align) {
+                            case 'center': textField.setAlignment(TextAlignment.Center); break;
+                            case 'right': textField.setAlignment(TextAlignment.Right); break;
+                            case 'left': default: textField.setAlignment(TextAlignment.Left); break;
+                        }
+                    }
+
+                    if (fieldData.required) textField.enableRequired();
+
+                    // --- ADD TO PAGE (Using your specific styles) ---
+                    textField.addToPage(page, {
+                        x: scaledX,
+                        y: pdfY,
+                        width: scaledW,
+                        height: scaledH,
+                        font: helveticaFont, // Helper for widget appearance
+                        borderWidth: 0, 
+                        backgroundColor: rgb(1, 1, 1), // White background
+                    });
+
+                } catch (err) {
+                    console.error(`Skipping Field "${fieldName}": ${err.message}`);
+                }
             }
         });
 
