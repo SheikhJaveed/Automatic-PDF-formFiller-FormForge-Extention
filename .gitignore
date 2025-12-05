@@ -1,0 +1,48 @@
+# --- Dependencies ---
+node_modules/
+/backend/node_modules/
+/frontend/node_modules/
+
+# --- Environment Variables (Security) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Backend Specifics ---
+# Ignore the folder where PDFs are uploaded
+uploads/
+backend/uploads/
+
+# Ignore generated PDFs if they are saved locally during testing
+*.pdf
+!public/sample.pdf  # (Optional: Keep this line if you have a sample PDF you DO want to track)
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# --- Frontend Build Output ---
+dist/
+build/
+
+# --- IDE & OS Files ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+ehthumbs.db
+
+# --- Testing Coverage ---
+coverage/
+.nyc_output/
