@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+const { spawn } = require('child_process'); // <--- CRITICAL IMPORT
 
 const app = express();
 const PORT = 5000;
@@ -27,16 +28,73 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use('/files', express.static(UPLOADS_DIR));
 
-// --- ROUTE 1: UPLOAD PDF ---
-app.post('/upload', upload.single('pdf'), (req, res) => {
-    if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-    res.json({ filename: req.file.filename });
+// --- HELPER: RUN PYTHON SCRIPT ---
+const detectFieldsWithPython = (filePath) => {
+    return new Promise((resolve, reject) => {
+        // Use 'python' for Windows. If on Mac/Linux, you might need 'python3'
+        const pythonProcess = spawn('python', ['detector.py', filePath]);
+
+        let dataString = '';
+        let errorString = '';
+
+        // Collect data from Python's print() statements
+        pythonProcess.stdout.on('data', (data) => {
+            dataString += data.toString();
+        });
+
+        // Collect errors
+        pythonProcess.stderr.on('data', (data) => {
+            errorString += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (errorString) {
+                console.warn("Python Warnings/Errors:", errorString);
+            }
+
+            if (code !== 0) {
+                reject("Python script exited with error code " + code);
+                return;
+            }
+
+            try {
+                // Parse the JSON array printed by Python
+                const fields = JSON.parse(dataString);
+                resolve(fields);
+            } catch (e) {
+                console.error("Failed to parse Python response:", dataString);
+                reject("Invalid JSON from Python");
+            }
+        });
+    });
+};
+
+// --- ROUTE 1: UPLOAD & DETECT ---
+app.post('/upload', upload.single('pdf'), async (req, res) => {
+    try {
+        if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
+
+        console.log(`Analyzing PDF: ${req.file.filename}...`);
+
+        // 1. Run the Python Auto-Detector
+        const detectedFields = await detectFieldsWithPython(req.file.path);
+
+        console.log(`Success! Detected ${detectedFields.length} fields.`);
+
+        // 2. Return Filename AND Fields to Frontend
+        res.json({ 
+            filename: req.file.filename,
+            fields: detectedFields 
+        });
+
+    } catch (error) {
+        console.error("Detection Error:", error);
+        res.status(500).json({ error: "Failed to analyze PDF" });
+    }
 });
 
-// --- ROUTE 2: PROCESS PDF (Using YOUR Custom Logic) ---
+// --- ROUTE 2: PROCESS & DOWNLOAD PDF ---
 app.post('/process-pdf', async (req, res) => {
-    console.log("Received request at /process-pdf");
-
     try {
         const { filename, fields } = req.body;
 
@@ -65,7 +123,7 @@ app.post('/process-pdf', async (req, res) => {
             
             const page = pdfDoc.getPage(pageIndex);
             
-            // --- YOUR SCALING LOGIC ---
+            // --- SCALING LOGIC ---
             const { width: pdfWidth, height: pdfHeight } = page.getSize();
             const scaleFactor = pdfWidth / FRONTEND_WIDTH;
 
@@ -74,17 +132,14 @@ app.post('/process-pdf', async (req, res) => {
             const scaledW = fieldData.w * scaleFactor;
             const scaledH = fieldData.h * scaleFactor;
 
-            // PDF Coordinate Calculation (Bottom-Left Origin)
             const pdfY = pdfHeight - scaledY - scaledH;
 
             // --- FIELD NAME HANDLING ---
-            // We attempt to use the EXACT name. 
-            // If it ends in a dot, we append a space to prevent the crash.
             let fieldName = fieldData.name || fieldData.id;
             
             // Prevent Duplicate Names Crash
             if (form.getFields().some(f => f.getName() === fieldName)) {
-                fieldName = `${fieldName} (Copy)`; // Simple suffix
+                fieldName = `${fieldName}_${Date.now()}`; 
             }
 
             if (fieldData.type === 'checkbox') {
@@ -98,37 +153,22 @@ app.post('/process-pdf', async (req, res) => {
                         width: scaledW,
                         height: scaledH,
                         borderWidth: 0,
-                        backgroundColor: rgb(1, 1, 1), // White background
+                        backgroundColor: rgb(1, 1, 1),
                     });
-                } catch (err) {
-                    console.error(`Skipping Checkbox "${fieldName}": ${err.message}`);
-                }
+                } catch (err) {}
             } else {
-                // TEXT FIELD LOGIC
+                // TEXT FIELD
                 try {
-                    let textField;
-                    try {
-                        textField = form.createTextField(fieldName);
-                    } catch (err) {
-                        // FALLBACK: If "Periods" error, append a space to make it valid but keep the dot
-                        if (err.message.includes('Periods in PDF field names')) {
-                            console.warn(`Fixing invalid name: "${fieldName}" -> "${fieldName} "`);
-                            textField = form.createTextField(fieldName + ' ');
-                        } else {
-                            throw err;
-                        }
-                    }
+                    // Handle periods in names
+                    if (fieldName.includes('.')) fieldName = fieldName.replace(/\./g, '_');
 
+                    const textField = form.createTextField(fieldName);
                     textField.setText(''); 
 
-                    // --- YOUR FONT SIZE & DA LOGIC ---
                     const fontSize = (fieldData.fontSize || 11) * scaleFactor;
-                    
-                    // Manually set Default Appearance string (Your old code logic)
                     const daString = `/Helv ${fontSize} Tf 0 g`;
                     textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
 
-                    // --- ALIGNMENT ---
                     if (fieldData.align) {
                         switch (fieldData.align) {
                             case 'center': textField.setAlignment(TextAlignment.Center); break;
@@ -139,15 +179,14 @@ app.post('/process-pdf', async (req, res) => {
 
                     if (fieldData.required) textField.enableRequired();
 
-                    // --- ADD TO PAGE (Using your specific styles) ---
                     textField.addToPage(page, {
                         x: scaledX,
                         y: pdfY,
                         width: scaledW,
                         height: scaledH,
-                        font: helveticaFont, // Helper for widget appearance
+                        font: helveticaFont,
                         borderWidth: 0, 
-                        backgroundColor: rgb(1, 1, 1), // White background
+                        backgroundColor: rgb(1, 1, 1),
                     });
 
                 } catch (err) {
@@ -161,7 +200,6 @@ app.post('/process-pdf', async (req, res) => {
         res.setHeader('Content-Type', 'application/pdf');
         res.setHeader('Content-Disposition', `attachment; filename=edited_${filename}`);
         res.send(Buffer.from(pdfBytes));
-        console.log("PDF processed successfully.");
 
     } catch (error) {
         console.error('Processing Error:', error);
