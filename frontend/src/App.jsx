@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-do
 import { Document, Page, pdfjs } from 'react-pdf';
 import { Rnd } from 'react-rnd';
 import axios from 'axios';
-
-import "./App.css";
+import "./App.css"; 
 
 // Initialize PDF Worker
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
@@ -32,13 +31,11 @@ const Icons = {
 const FONT_SIZES = Array.from({ length: 20 }, (_, i) => i + 6);
 
 // --- DRAGGABLE FIELD COMPONENT ---
-const DraggableField = ({ field, isSelected, onSelect, onUpdate, onDelete, onDuplicate, onDragStopRaw }) => {
+const DraggableField = ({ field, isSelected, isMultiSelect, onSelect, onUpdate, onDelete, onDuplicate, onDragStopRaw }) => {
   const [isNameExpanded, setIsNameExpanded] = useState(false);
 
-  // --- SMART POSITIONING ---
-  // If field is past 400px (half page), show menu on Left. Otherwise Right.
+  // Position logic
   const isRightSide = field.x > 400;
-  // If field is too close to top (< 110px), show menu Below. Otherwise Above.
   const isTopSide = field.y < 110;
 
   return (
@@ -55,20 +52,21 @@ const DraggableField = ({ field, isSelected, onSelect, onUpdate, onDelete, onDup
       }}
       onClick={(e) => {
         e.stopPropagation(); 
-        onSelect(field.id); 
+        onSelect(field.id, e); 
       }}
       className={`group m-0 p-0 ${isSelected ? 'z-50' : 'z-10'}`} 
     >
-      {/* POPUP MENU */}
-      {isSelected && (
+      {/* 
+         POPUP MENU (Single Select Only) 
+         If multiple items are selected, we HIDE this local menu to prevent clutter.
+      */}
+      {isSelected && !isMultiSelect && (
         <div 
           className="absolute bg-white shadow-xl border border-gray-200 rounded-lg p-3 z-50 flex flex-col gap-2"
           style={{ 
-            width: '300px', // Strict width to prevent overflow
-            // Smart X Alignment
+            width: '300px', 
             left: isRightSide ? 'auto' : '0', 
             right: isRightSide ? '0' : 'auto',
-            // Smart Y Alignment
             bottom: isTopSide ? 'auto' : '100%',
             top: isTopSide ? '100%' : 'auto',
             marginTop: isTopSide ? '10px' : '0',
@@ -76,23 +74,21 @@ const DraggableField = ({ field, isSelected, onSelect, onUpdate, onDelete, onDup
           }}
           onMouseDown={(e) => e.stopPropagation()} 
         >
-          {/* Row 1: Name (Expandable), Required, Duplicate, Delete */}
+          {/* Row 1: Name, Req, Actions */}
           <div className="flex items-start gap-2 border-b border-gray-100 pb-2">
-            <div className="flex flex-col flex-grow relative" style={{ maxWidth: '180px' }}> {/* Limit width of text column */}
+            <div className="flex flex-col flex-grow relative" style={{ maxWidth: '180px' }}> 
                <label className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Field Name / Question</label>
                
-               {/* 1. COMPACT VIEW (Truncated) */}
                {!isNameExpanded && (
                  <div 
                    className="text-xs font-semibold text-gray-700 bg-gray-50 border border-gray-300 rounded px-2 py-1 h-8 w-full cursor-text hover:bg-white hover:border-blue-400 transition-colors flex items-center"
                    onClick={() => setIsNameExpanded(true)}
-                   title={field.name} // Show full text on hover
+                   title={field.name} 
                  >
                    <span className="truncate w-full block">{field.name}</span>
                  </div>
                )}
 
-               {/* 2. EXPANDED VIEW (Overlay) */}
                {isNameExpanded && (
                  <div className="absolute top-5 left-0 w-[280px] z-50 bg-white border border-blue-400 shadow-2xl rounded-md p-2 flex flex-col gap-2">
                     <textarea 
@@ -168,14 +164,14 @@ const DraggableField = ({ field, isSelected, onSelect, onUpdate, onDelete, onDup
           w-full h-full flex items-center px-1 cursor-move overflow-hidden
           transition-all duration-150 border-2
           ${isSelected 
-             ? 'border-blue-500 bg-blue-100/50 shadow-md' // Selected
-             : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50'} // Unselected
+             ? 'border-blue-500 bg-blue-100/50 shadow-md' 
+             : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50'}
           ${field.type === 'checkbox' ? 'justify-center' : ''}
         `}
       >
         {field.type === 'text' ? (
           <span 
-            className="w-full text-blue-900 opacity-90 whitespace-nowrap overflow-hidden"
+            className="w-full text-blue-900 opacity-90 whitespace-nowrap overflow-hidden block"
             style={{ 
               fontSize: `${field.fontSize}px`, 
               textAlign: field.align, 
@@ -208,7 +204,10 @@ function FormForgeApp() {
   const [serverFilename, setServerFilename] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [fields, setFields] = useState([]);
-  const [selectedFieldId, setSelectedFieldId] = useState(null);
+  
+  // Supports multiple IDs
+  const [selectedFieldIds, setSelectedFieldIds] = useState([]); 
+  
   const [addingMode, setAddingMode] = useState(null); 
   const [isProcessing, setIsProcessing] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -254,7 +253,13 @@ function FormForgeApp() {
 
       setServerFilename(res.data.filename);
       setFileUrl(`http://localhost:5000/files/${res.data.filename}`);
-      setFields(res.data.fields || []); 
+      
+      const importedFields = (res.data.fields || []).map(f => ({
+          ...f,
+          align: 'center' 
+      }));
+      
+      setFields(importedFields); 
       localStorage.removeItem('pdf_fields');
       
       navigate('/editor');
@@ -279,7 +284,7 @@ function FormForgeApp() {
   const onDocumentLoadSuccess = ({ numPages }) => setNumPages(numPages);
 
   // --- MOUSE EVENTS ---
-  const handlePageMouseDown = (e, pageIndex) => {
+  const handleCanvasClick = (e, pageIndex) => {
     if (addingMode) {
         const rect = e.currentTarget.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -297,33 +302,59 @@ function FormForgeApp() {
             align: 'center' 
         }]);
         setAddingMode(null);
-        setSelectedFieldId(id);
+        setSelectedFieldIds([id]);
         return;
     }
-    // Deselect if clicking empty space
-    setSelectedFieldId(null);
+    
+    // DESELECT ALL if clicking empty space
+    setSelectedFieldIds([]);
   };
 
-  // --- FIELD ACTIONS ---
+  const handleFieldSelect = (id, e) => {
+    if (e.ctrlKey || e.metaKey) {
+        setSelectedFieldIds(prev => {
+            if (prev.includes(id)) {
+                return prev.filter(fid => fid !== id);
+            } else {
+                return [...prev, id];
+            }
+        });
+    } else {
+        setSelectedFieldIds([id]);
+    }
+  };
+
   const updateField = (id, newProps) => {
     setFields(prevFields => prevFields.map(f => f.id === id ? { ...f, ...newProps } : f));
   };
 
+  // Bulk Delete Function
+  const deleteSelected = () => {
+    if (selectedFieldIds.length === 0) return;
+    if(window.confirm(`Delete ${selectedFieldIds.length} items?`)) {
+        setFields(prev => prev.filter(f => !selectedFieldIds.includes(f.id)));
+        setSelectedFieldIds([]);
+    }
+  };
+
   const deleteField = (id) => {
     setFields(prev => prev.filter(f => f.id !== id));
-    if (selectedFieldId === id) setSelectedFieldId(null);
+    setSelectedFieldIds(prev => prev.filter(fid => fid !== id));
   };
 
   const duplicateField = (id) => {
     const field = fields.find(f => f.id === id);
     if (!field) return;
+    const newId = genId();
     setFields([...fields, {
         ...field,
-        id: genId(),
+        id: newId,
         x: field.x + 20,
         y: field.y + 20,
-        name: `${field.name}_copy`
+        name: `${field.name}_copy`,
+        align: field.align || 'center'
     }]);
+    setSelectedFieldIds([newId]);
   };
 
   const handleDragStop = (e, d, fieldId) => {
@@ -374,6 +405,7 @@ function FormForgeApp() {
     <div className={`bg-slate-50 min-h-screen font-sans ${addingMode ? 'cursor-crosshair' : ''}`}>
       <style>{`.react-pdf__Page { margin: 0 !important; } .react-pdf__Page__canvas { display: block !important; }`}</style>
       
+      {/* NAVBAR */}
       <nav className="fixed top-0 left-0 w-full h-16 bg-white border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">A</div>
@@ -390,6 +422,29 @@ function FormForgeApp() {
         )}
       </nav>
 
+      {/* --- MULTI-SELECT FLOATING BAR (NEW) --- */}
+      {selectedFieldIds.length > 1 && (
+        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white shadow-2xl border border-gray-200 rounded-full px-6 py-3 flex items-center gap-4 z-[100] animate-in fade-in slide-in-from-bottom-4">
+            <div className="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full text-xs">
+                {selectedFieldIds.length} Selected
+            </div>
+            <div className="h-4 w-px bg-gray-300"></div>
+            <button 
+                onClick={deleteSelected}
+                className="flex items-center gap-2 text-red-600 hover:text-red-700 font-bold text-sm transition-colors"
+            >
+                <Icons.Trash /> Delete All
+            </button>
+            <button 
+                onClick={() => setSelectedFieldIds([])}
+                className="text-gray-400 hover:text-gray-600 text-xl font-light ml-2 leading-none"
+            >
+                &times;
+            </button>
+        </div>
+      )}
+
+      {/* ROUTES */}
       <div className="pt-20 pb-10 min-h-screen flex flex-col items-center select-none">
         <Routes>
           <Route path="/" element={
@@ -422,7 +477,7 @@ function FormForgeApp() {
                         className="relative bg-white shadow-xl transition-shadow group" 
                         style={{ width: '800px' }} 
                         ref={el => pageRefs.current[i] = el}
-                        onMouseDown={(e) => handlePageMouseDown(e, i)}
+                        onClick={(e) => handleCanvasClick(e, i)}
                       >
                         <Page pageNumber={i + 1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
                         
@@ -430,10 +485,11 @@ function FormForgeApp() {
                           <DraggableField 
                             key={field.id} 
                             field={field} 
-                            isSelected={selectedFieldId === field.id}
-                            onSelect={setSelectedFieldId} 
+                            isSelected={selectedFieldIds.includes(field.id)}
+                            isMultiSelect={selectedFieldIds.length > 1} // Logic Check
+                            onSelect={handleFieldSelect} 
                             onUpdate={updateField} 
-                            onDelete={deleteField}
+                            onDelete={deleteField} 
                             onDuplicate={duplicateField} 
                             onDragStopRaw={handleDragStop}
                           />
