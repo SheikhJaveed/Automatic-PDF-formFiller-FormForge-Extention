@@ -1,197 +1,1083 @@
 Verification Report for: edited_form.pdf
 ==================================================
 
-Under Section B, Item 9, Does the entity have a specified Committee of the Board/ Director responsible for decision making on sustainability related issues? (Yes / No)
-Under Section B, Item 9, Does the entity have a specified Committee of the Board/ Director responsible for decision making on sustainability related issues? (Yes / No). If yes, provide details
-Under Section B, Item 9, Does the entity have a specified Committee of the Board/ Director responsible for decision making on sustainability related issues? (Yes / No). If yes, provide details. 
-Under Section B, Item 8, provide the Details of the highest authority responsible for implementation and oversight of the Business Responsibility policy(ies)
-Under Section B, Item 8, provide the Details of the highest authority responsible for implementation and oversight of the Business Responsibility policy(ies). 
-Under Section B, for Principle 9 (P9), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 8 (P8), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 7 (P7), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 6 (P6), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 5 (P5), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 4 (P4), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 3 (P3), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 2 (P2), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 1 (P1), what is the performance of the entity against the specific commitments, goals and targets along with reasons in case the same are not met?
-Under Section B, for Principle 9 (P9), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 8 (P8), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 7 (P7), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 6 (P6), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 5 (P5), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 4 (P4), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 3 (P3), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 2 (P2), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 1 (P1), what are the specific commitments, goals and targets set by the entity with defined timelines, if any?
-Under Section B, for Principle 9 (P9), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 8 (P8), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 7 (P7), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 6 (P6), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 5 (P5), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 4 (P4), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 3 (P3), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 2 (P2), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 1 (P1), what are the names of the national and international codes/certifications/labels/standards adopted by the entity and mapped to this principle?
-Under Section B, for Principle 9 (P9), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 8 (P8), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 7 (P7), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 6 (P6), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 5 (P5), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 4 (P4), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 3 (P3), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 2 (P2), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 1 (P1), do the enlisted policies extend to your value chain partners (Yes/No)?
-Under Section B, for Principle 9 (P9), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 8 (P8), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 7 (P7), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 6 (P6), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 5 (P5), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 4 (P4), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 3 (P3), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 2 (P2), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 1 (P1), whether the entity has translated the policy into procedures (Yes/No)?
-Under Section B, for Principle 9 (P9), provide the Web Link of the Policies, if available
-Under Section B, for Principle 9 (P9), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 8 (P8), provide the Web Link of the Policies, if available
-Under Section B, for Principle 8 (P8), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 7 (P7), provide the Web Link of the Policies, if available
-Under Section B, for Principle 7 (P7), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 6 (P6), provide the Web Link of the Policies, if available
-Under Section B, for Principle 6 (P6), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 5 (P5), provide the Web Link of the Policies, if available
-Under Section B, for Principle 5 (P5), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 4 (P4), provide the Web Link of the Policies, if available
-Under Section B, for Principle 4 (P4), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 3 (P3), provide the Web Link of the Policies, if available
-Under Section B, for Principle 3 (P3), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 2 (P2), provide the Web Link of the Policies, if available
-Under Section B, for Principle 2 (P2), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 1 (P1), provide the Web Link of the Policies, if available
-Under Section B, for Principle 1 (P1), provide the Web Link of the Policies, if available. 
-Under Section B, for Principle 9 (P9), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 8 (P8), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 7 (P7), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 6 (P6), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 5 (P5), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 4 (P4), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 3 (P3), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 2 (P2), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 1 (P1), has the policy been approved by the Board (Yes/No)?
-Under Section B, for Principle 9 (P9), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 8 (P8), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 5 (P5), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 4 (P4), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 7 (P7), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 6 (P6), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 3 (P3), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 2 (P2), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, for Principle 1 (P1), does the entity’s policy cover the principle and its core elements (Yes/No)?
-Under Section B, Item 12, for Principle 9 (P9), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 8 (P8), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 7 (P7), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 6 (P6), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 5 (P5), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 4 (P4), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 3 (P3), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 2 (P2), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 1 (P1), if a policy is not in place, is there any other reason (please specify)?
-Under Section B, Item 12, for Principle 9 (P9), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 8 (P8), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 7 (P7), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 6 (P6), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 5 (P5), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 4 (P4), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 3 (P3), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 2 (P2), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 1 (P1), if a policy is not in place, is it planned to be done in the next financial year (Yes/No)?
-Under Section B, Item 12, for Principle 9 (P9), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 8 (P8), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 7 (P7), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 6 (P6), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 5 (P5), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 4 (P4), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 3 (P3), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 2 (P2), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 1 (P1), if a policy is not in place, is it because the entity does not have the financial, human, or technical resources available for the task (Yes/No)?
-Under Section B, Item 12, for Principle 9 (P9), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 8 (P8), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 7 (P7), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 6 (P6), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 5 (P5), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 4 (P4), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 3 (P3), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 2 (P2), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 1 (P1), if a policy is not in place, is it because the entity is not at a stage where it is in a position to formulate and implement the policies (Yes/No)?
-Under Section B, Item 12, for Principle 9 (P9), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 8 (P8), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 7 (P7), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 6 (P6), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 5 (P5), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 4 (P4), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 3 (P3), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 2 (P2), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 12, for Principle 1 (P1), if a policy is not in place, is it because the entity does not consider the Principle material to its business (Yes/No)?
-Under Section B, Item 11, for Principle 9 (P9), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 9 (P9), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 9 (P9), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 8 (P8), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 8 (P8), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 8 (P8), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 7 (P7), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 7 (P7), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 7 (P7), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 6 (P6), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 6 (P6), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 6 (P6), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 5 (P5), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 5 (P5), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 5 (P5), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 4 (P4), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 4 (P4), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 4 (P4), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 3 (P3), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 3 (P3), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 3 (P3), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 2 (P2), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 2 (P2), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 2 (P2), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 11, for Principle 1 (P1), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No)
-Under Section B, Item 11, for Principle 1 (P1), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency
-Under Section B, Item 11, for Principle 1 (P1), has the entity carried out independent assessment/ evaluation of the working of its policies by an external agency? (Yes/No). If yes, provide name of the agency. 
-Under Section B, Item 10, for Principle 9 (P9), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 8 (P8), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 7 (P7), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 6 (P6), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 5 (P5), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 4 (P4), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 3 (P3), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 2 (P2), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 1 (P1), what is the Frequency of review for Compliance with statutory requirements and rectification of non-compliances?
-Under Section B, Item 10, for Principle 9 (P9), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 8 (P8), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 7 (P7), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 6 (P6), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 5 (P5), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 4 (P4), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 3 (P3), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 2 (P2), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 1 (P1), indicate whether the review of Compliance with statutory requirements and rectification of non-compliances was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 9 (P9), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 8 (P8), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 7 (P7), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 6 (P6), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 5 (P5), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 4 (P4), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 3 (P3), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 2 (P2), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 1 (P1), what is the Frequency of review for Performance against above policies and follow up action?
-Under Section B, Item 10, for Principle 9 (P9), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 8 (P8), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 7 (P7), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 6 (P6), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 5 (P5), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 4 (P4), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 3 (P3), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 2 (P2), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
-Under Section B, Item 10, for Principle 1 (P1), indicate whether the review of Performance against above policies and follow up action was undertaken by Director / Committee of the Board/ Any other Committee?
+Under Section C, Principle 1, Essential Indicator 1, for Workers, what is the %age of persons in respective category covered by the awareness programmes?
+Under Section C, Principle 1, Essential Indicator 1, for Workers, what are the Topics / principles covered under the training and its impact?
+Under Section C, Principle 1, Essential Indicator 1, for Workers, what is the Total number of training and awareness programmes held?
+Under Section C, Principle 1, Essential Indicator 1, for Employees other than BoD and KMPs, what is the %age of persons in respective category covered by the awareness programmes?
+Under Section C, Principle 1, Essential Indicator 1, for Employees other than BoD and KMPs, what are the Topics / principles covered under the training and its impact?
+Under Section C, Principle 1, Essential Indicator 1, for Employees other than BoD and KMPs, what is the Total number of training and awareness programmes held?
+Under Section C, Principle 1, Essential Indicator 1, for Key Managerial Personnel, what is the %age of persons in respective category covered by the awareness programmes?
+Under Section C, Principle 1, Essential Indicator 1, for Key Managerial Personnel, what are the Topics / principles covered under the training and its impact?
+Under Section C, Principle 1, Essential Indicator 1, for Key Managerial Personnel, what is the Total number of training and awareness programmes held?
+Under Section C, Principle 1, Essential Indicator 1, for the Board of Directors, what is the %age of persons in respective category covered by the awareness programmes?
+Under Section C, Principle 1, Essential Indicator 1, for the Board of Directors, what are the Topics / principles covered under the training and its impact?
+Under Section C, Principle 1, Essential Indicator 1, for the Board of Directors, what is the Total number of training and awareness programmes held?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Punishment, Has an appeal been preferred? (Yes/No)?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Punishment, provide a Brief of the Case_
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Punishment, what is the Name of the regulatory/ enforcement agencies/ judicial institutions?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Punishment, what is the NGRBC Principle involved?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Imprisonment, Has an appeal been preferred? (Yes/No)?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Imprisonment, provide a Brief of the Case_
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Imprisonment, what is the Name of the regulatory/ enforcement agencies/ judicial institutions?
+Under Section C, Principle 1, Essential Indicator 2, for Non-Monetary - Imprisonment, what is the NGRBC Principle involved?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Compounding fee, Has an appeal been preferred? (Yes/No)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Compounding fee, provide a Brief of the Case_
+ Under Section C, Principle 1, Essential Indicator 2, for Monetary - Compounding fee, what is the Amount (In INR)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Compounding fee, what is the Name of the regulatory/ enforcement agencies/ judicial institutions?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Compounding fee, what is the NGRBC Principle involved?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Settlement, Has an appeal been preferred? (Yes/No)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Settlement, provide a Brief of the Case_
+
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Settlement, what is the Amount (In INR)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Settlement, what is the Name of the regulatory/ enforcement agencies/ judicial institutions?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Settlement, what is the NGRBC Principle involved?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Penalty/ Fine, Has an appeal been preferred? (Yes/No)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Penalty/ Fine, provide a Brief of the Case_
+
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Penalty/ Fine, what is the Amount (In INR)?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Penalty/ Fine, what is the Name of the regulatory/ enforcement agencies/ judicial institutions?
+Under Section C, Principle 1, Essential Indicator 2, for Monetary - Penalty/ Fine, what is the NGRBC Principle involved?
+Under Section C, Principle 1, Essential Indicator 6, provide the Remarks for complaints received in relation to issues of Conflict of Interest of the KMPs for the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, what is the Number of complaints received in relation to issues of Conflict of Interest of the KMPs for the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, provide the Remarks for complaints received in relation to issues of Conflict of Interest of the KMPs for the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, what is the Number of complaints received in relation to issues of Conflict of Interest of the KMPs for the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, provide the Remarks for complaints received in relation to issues of Conflict of Interest of the Directors for the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, what is the Number of complaints received in relation to issues of Conflict of Interest of the Directors for the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, provide the Remarks for complaints received in relation to issues of Conflict of Interest of the Directors for the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 6, what is the Number of complaints received in relation to issues of Conflict of Interest of the Directors for the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Workers against whom disciplinary action was taken for bribery/corruption in the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Workers against whom disciplinary action was taken for bribery/corruption in the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Employees against whom disciplinary action was taken for bribery/corruption in the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Employees against whom disciplinary action was taken for bribery/corruption in the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of KMPs against whom disciplinary action was taken for bribery/corruption in the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of KMPs against whom disciplinary action was taken for bribery/corruption in the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Directors against whom disciplinary action was taken for bribery/corruption in the Previous Financial Year?
+Under Section C, Principle 1, Essential Indicator 5, what is the number of Directors against whom disciplinary action was taken for bribery/corruption in the Current Financial Year?
+Under Section C, Principle 1, Essential Indicator 3, for the First Case Entry, provide the Name of the regulatory/ enforcement agencies/ judicial institutions involved?
+Under Section C, Principle 1, Essential Indicator 3, for the First Case Entry, provide the Case Details regarding the Appeal/Revision preferred?
+Under Section C, Principle 1, Leadership Indicator 1, what are the Topics / principles covered under the training for value chain partners?
+Under Section C, Principle 1, Leadership Indicator 1, what is the Total number of awareness programmes held for value chain partners?
+Under Section C, Principle 2, Essential Indicator 1, provide Details of improvements in environmental and social impacts resulting from Capex investments?
+ Under Section C, Principle 2, Essential Indicator 1, what is the percentage of Capex investment in specific technologies to improve environmental and social impacts in the Previous Financial Year?
+Under Section C, Principle 2, Essential Indicator 1, what is the percentage of Capex investment in specific technologies to improve environmental and social impacts in the Current Financial Year?
+Under Section C, Principle 2, Essential Indicator 1, provide Details of improvements in environmental and social impacts resulting from R&D investments?
+Under Section C, Principle 2, Essential Indicator 1, what is the percentage of R&D investment in specific technologies to improve environmental and social impacts in the Previous Financial Year?
+Under Section C, Principle 2, Essential Indicator 1, what is the percentage of R&D investment in specific technologies to improve environmental and social impacts in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 1, indicate whether Results communicated in public domain (Yes/No) (and if yes, provide the web-link) for the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 1, indicate Whether conducted by independent external agency (Yes/No) for the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 1, what is the Boundary for which the Life Cycle Perspective / Assessment was conducted for the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 1, what is the % of total Turnover contributed by the product/service in the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 1, what is the Name of Product /Service for the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 1, what is the NIC Code for the First LCA Entry?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Safely Disposed in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Recycled in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Re-Used in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Safely Disposed in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Recycled in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Other waste, what is the amount Re-Used in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Safely Disposed in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Recycled in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Re-Used in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Safely Disposed in the Current Financial Year
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Recycled in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Hazardous waste, what is the amount Re-Used in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Safely Disposed in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Recycled in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Re-Used in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Safely Disposed in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Recycled in the Current Financial Year?
+
+Under Section C, Principle 2, Leadership Indicator 4, for E-waste, what is the amount Re-Used in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Safely Disposed in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Recycled in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Re-Used in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Safely Disposed in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Recycled in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 4, for Plastics (including packaging), what is the amount Re-Used in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 3, what is the percentage of Recycled or re-used input material to total material in the Previous Financial Year?
+Under Section C, Principle 2, Leadership Indicator 3, what is the percentage of Recycled or re-used input material to total material in the Current Financial Year?
+Under Section C, Principle 2, Leadership Indicator 3, Indicate input material for the First Material Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Action Taken to mitigate the risk for the Third Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Description of the risk / concern for the Third Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Name of Product / Service for the Third Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Action Taken to mitigate the risk for the Second Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Description of the risk / concern for the Second Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Name of Product / Service for the Second Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Action Taken to mitigate the risk for the First Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 2, what is the Description of the risk / concern for the First Concern Entry?
+
+Under Section C, Principle 2, Leadership Indicator 2, what is the Name of Product / Service for the First Concern Entry?
+Under Section C, Principle 2, Leadership Indicator 5, what are the Reclaimed products and their packaging materials as % of total products sold in respective category?
+Under Section C, Principle 2, Leadership Indicator 5, Indicate product category for the First Product Category entry?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Total Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Total Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Total Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Total Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Total Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Total Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Total Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Total Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Total Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Total Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Total Other than Permanent workers?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Female Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Female Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Female Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Female Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Female Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Female Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Female Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Female Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Female Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Female Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Female Other than Permanent workers?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Male Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Male Other than Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Male Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Male Other than Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Male Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Male Other than Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Male Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Male Other than Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Male Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Male Other than Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Male Other than Permanent workers?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Total Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Total Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Total Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Total Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Total Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Total Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Total Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Total Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Total Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Total Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Total Permanent workers?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Female Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Female Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Female Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Female Permanent workers covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Female Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Female Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Female Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Female Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Female Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Female Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Female Permanent workers?
+Under Section C, Principle 3, Indicator 1b, what is the % (F/A) of Male Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the Number (F) of Male Permanent workers covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1b, what is the % (E/A) of Male Permanent workers covered by Paternity Benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (E) of Male Permanent workers covered by Paternity Benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (D/A) of Male Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the Number (D) of Male Permanent workers covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1b, what is the % (C/A) of Male Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (C) of Male Permanent workers covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1b, what is the % (B/A) of Male Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Number (B) of Male Permanent workers covered by Health insurance?
+Under Section C, Principle 3, Indicator 1b, what is the Total (A) number of Male Permanent workers?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Total Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Total Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Total Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Total Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Total Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Total Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Total Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Total Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Total Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Total Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Total Other than Permanent employees?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Female Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Female Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Female Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Female Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Female Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Female Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Female Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Female Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Female Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Female Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Female Other than Permanent employees?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Male Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Male Other than Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Male Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Male Other than Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Male Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Male Other than Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Male Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Male Other than Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Male Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Male Other than Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Male Other than Permanent employees?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Total Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Total Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Total Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Total Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Total Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Total Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Total Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Total Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Total Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Total Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Total Permanent employees?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Female Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Female Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Female Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Female Permanent employees covered by Paternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Female Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Female Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Female Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Female Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Female Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Female Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Female Permanent employees?
+Under Section C, Principle 3, Indicator 1a, what is the % (F/A) of Male Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the Number (F) of Male Permanent employees covered by Day Care facilities?
+Under Section C, Principle 3, Indicator 1a, what is the % (E/A) of Male Permanent employees covered by Paternity Benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (E) of Male Permanent employees covered by Paternity Benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (D/A) of Male Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the Number (D) of Male Permanent employees covered by Maternity benefits?
+Under Section C, Principle 3, Indicator 1a, what is the % (C/A) of Male Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (C) of Male Permanent employees covered by Accident insurance?
+Under Section C, Principle 3, Indicator 1a, what is the % (B/A) of Male Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Number (B) of Male Permanent employees covered by Health insurance?
+Under Section C, Principle 3, Indicator 1a, what is the Total (A) number of Male Permanent employees?
+ Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, what is the No_ of workers covered as a % of total workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, what is the No_ of employees covered as a % of total employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, what is the No_ of workers covered as a % of total workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Others – please specify, what is the No_ of employees covered as a % of total employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, what is the No_ of workers covered as a % of total workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, what is the No_ of employees covered as a % of total employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, what is the No_ of workers covered as a % of total workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for ESI, what is the No_ of employees covered as a % of total employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, what is the No_ of employees covered as a % of total employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, what is the No_ of employees covered as a % of total employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, what is the No_ of workers covered as a % of total workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for Gratuity, what is the No_ of workers covered as a % of total workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for PF, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for PF, what is the No_ of workers covered as a % of total workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for PF, is the amount Deducted and deposited with the authority (Y/N/N_A_) in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for PF, what is the No_ of workers covered as a % of total workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 2, for PF, what is the No_ of employees covered as a % of total employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 6, is there a mechanism available to receive and redress grievances for Other than Permanent Employees? (Yes/No, If Yes, then give details of the mechanism in brief)_
+Under Section C, Principle 3, Essential Indicator 6, is there a mechanism available to receive and redress grievances for Permanent Employees? (Yes/No, If Yes, then give details of the mechanism in brief)_
+Under Section C, Principle 3, Essential Indicator 6, is there a mechanism available to receive and redress grievances for Other than Permanent Workers? (Yes/No, If Yes, then give details of the mechanism in brief)_
+Under Section C, Principle 3, Essential Indicator 6, is there a mechanism available to receive and redress grievances for Permanent Workers? (Yes/No, If Yes, then give details of the mechanism in brief)_
+Under Section C, Principle 3, Essential Indicator 5, what is the Total Retention rate for Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Total Return to work rate for Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Total Retention rate for Permanent employees?
+Under Section C, Principle 3, Essential Indicator 5, what is the Total Return to work rate for Permanent employees?
+Under Section C, Principle 3, Essential Indicator 5, what is the Retention rate for Female Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Return to work rate for Female Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Retention rate for Female Permanent employees?
+Under Section C, Principle 3, Essential Indicator 5, what is the Return to work rate for Female Permanent employees?
+Under Section C, Principle 3, Essential Indicator 5, what is the Retention rate for Male Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Return to work rate for Male Permanent workers?
+Under Section C, Principle 3, Essential Indicator 5, what is the Retention rate for Male Permanent employees?
+Under Section C, Principle 3, Essential Indicator 5, what is the Return to work rate for Male Permanent employees?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Female Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Female Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Female Permanent Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Female Permanent Workers who are part of association(s) or Union in the Current Financial Year
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Female Permanent Workers who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Female Permanent Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Male Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Male Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Male Permanent Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Male Permanent Workers who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Male Permanent Workers who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Male Permanent Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Permanent Workers who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Permanent Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Permanent Workers who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Permanent Workers who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Permanent Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Female Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Female Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Female Permanent Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Female Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Female Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Female Permanent Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Male Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Male Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Male Permanent Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Male Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Male Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Male Permanent Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Permanent Employees who are part of association(s) or Union in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Permanent Employees in the Previous Financial Year?
+
+Under Section C, Principle 3, Essential Indicator 7, what is the Percentage of Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Number of Permanent Employees who are part of association(s) or Union in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 7, what is the Total number of Permanent Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total % (D/C) of Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total Number (D) of Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total % (B/A) of Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total % (B/A) of Workers who received performance reviews in the Current Financial Year?_1765977915175
+Under Section C, Principle 3, Essential Indicator 9, what is the Total Number (B) of Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (D/C) of Female Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (D) of Female Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (C) number of Female Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (B/A) of Female Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (B) of Female Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Female Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (D/C) of Male Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (D) of Male Workers who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (C) number of Male Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (B/A) of Male Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (B) of Male Workers who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Male Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total % (D/C) of Employees who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total Number (D) of Employees who received performance reviews in the Previous Financial Year
+ Under Section C, Principle 3, Essential Indicator 9, what is the Total (C) number of Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total % (B/A) of Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total Number (B) of Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (D/C) of Female Employees who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (D) of Female Employees who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (C) number of Female Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (B/A) of Female Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (B) of Female Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Female Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (D/C) of Male Employees who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (D) of Male Employees who received performance reviews in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (C) number of Male Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the % (B/A) of Male Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Number (B) of Male Employees who received performance reviews in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 9, what is the Total (A) number of Male Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (F/D) of Workers trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (F) of Workers trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (E/D) of Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (E) of Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (C/A) of Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (C) of Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (B/A) of Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (B) of Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (F/D) of Female Workers trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (F) of Female Workers trained on Skill upgradation in the Previous Financial Year
+Under Section C, Principle 3, Essential Indicator 8, what is the % (E/D) of Female Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (E) of Female Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (C/A) of Female Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (C) of Female Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (B/A) of Female Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (B) of Female Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Female Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (F/D) of Male Workers trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (F) of Male Workers trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (E/D) of Male Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (E) of Male Workers trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Male Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (C/A) of Male Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (C) of Male Workers trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (B/A) of Male Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (B) of Male Workers trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Male Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (F/D) of Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (F) of Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (E/D) of Employees trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (E) of Employees trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (C/A) of Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (C) of Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total % (B/A) of Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total Number (B) of Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (F/D) of Female Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (F) of Female Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (E/D) of Female Employees trained on Health and safety measures in the Previous Financial Year?
+nder Section C, Principle 3, Essential Indicator 8, what is the Number (E) of Female Employees trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Female Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (C/A) of Female Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (C) of Female Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (B/A) of Female Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (B) of Female Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Female Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (F/D) of Male Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (F) of Male Employees trained on Skill upgradation in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (E/D) of Male Employees trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (E) of Male Employees trained on Health and safety measures in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Male Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (C/A) of Male Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (C) of Male Employees trained on Skill upgradation in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the % (B/A) of Male Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Number (B) of Male Employees trained on Health and safety measures in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (A) number of Male Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of High consequence work-related injury or ill-health for Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of High consequence work-related injury or ill-health for Employees in the Previous Financia
+Under Section C, Principle 3, Essential Indicator 11, what is the number of High consequence work-related injury or ill-health for Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of High consequence work-related injury or ill-health for Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the No_ of fatalities for Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the No_ of fatalities for Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the No_ of fatalities for Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the No_ of fatalities for Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of Total recordable work-related injuries for Workers in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of Total recordable work-related injuries for Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of Total recordable work-related injuries for Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the number of Total recordable work-related injuries for Employees in the Current Financial Year?
+ Under Section C, Principle 3, Essential Indicator 11, what is the Lost Time Injury Frequency Rate (LTIFR) for Workers in the Previous Financial Year?
+ Under Section C, Principle 3, Essential Indicator 11, what is the Lost Time Injury Frequency Rate (LTIFR) for Employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the Lost Time Injury Frequency Rate (LTIFR) for Workers in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 11, what is the Lost Time Injury Frequency Rate (LTIFR) for Employees in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 14, what is the % of your plants and offices that were assessed regarding Working Conditions?
+Under Section C, Principle 3, Essential Indicator 13, provide Remarks regarding complaints on Health & Safety in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Health & Safety Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Health & Safety Filed during the year in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, provide Remarks regarding complaints on Health & Safety in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Health & Safety Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Health & Safety Filed during the year in the Current Financial Year?
+ Under Section C, Principle 3, Essential Indicator 13, provide Remarks regarding complaints on Working Conditions in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Working Conditions Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Working Conditions Filed during the year in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, provide Remarks regarding complaints on Working Conditions in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Working Conditions Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 3, Essential Indicator 13, what is the number of complaints regarding Working Conditions Filed during the year in the Current Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the No_ of workers that are rehabilitated and placed in suitable employment or whose family members have been placed in suitable employment in the Previous Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the No_ of workers that are rehabilitated and placed in suitable employment or whose family members have been placed in suitable employment in the Current Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the Total no_ of affected workers in the Previous Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the Total no_ of affected workers in the Current Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the No_ of employees that are rehabilitated and placed in suitable employment or whose family members have been placed in suitable employment in the Previous Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the No_ of employees that are rehabilitated and placed in suitable employment or whose family members have been placed in suitable employment in the Current Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the Total no_ of affected employees in the Previous Financial Year?
+Under Section C, Principle 3, Leadership Indicator 3, what is the Total no_ of affected employees in the Current Financial Year?
+Under Section C, Principle 3, Leadership Indicator 5, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Working Conditions?
+ Under Section C, Principle 4, Essential Indicator 2, what is the Purpose and scope of engagement including key topics and concerns raised for the Second Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what is the Frequency of engagement for the Second Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what are the Channels of communication used for the Second Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, indicate Whether identified as Vulnerable & Marginalized Group (Yes/No) for the Second Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what is the Stakeholder Group for the Second Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what is the Purpose and scope of engagement including key topics and concerns raised for the First Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what is the Frequency of engagement for the First Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what are the Channels of communication used for the First Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, indicate Whether identified as Vulnerable & Marginalized Group (Yes/No) for the First Stakeholder Group Entry?
+Under Section C, Principle 4, Essential Indicator 2, what is the Stakeholder Group for the First Stakeholder Group Entry?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Other than Permanent Female Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Other than Permanent Female Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Other than Permanent Female Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Other than Permanent Female Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Other than Permanent Female Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Other than Permanent Female Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Other than Permanent Female Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Other than Permanent Female Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Other than Permanent Female Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Other than Permanent Female Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Other than Permanent Male Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Other than Permanent Male Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Other than Permanent Male Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Other than Permanent Male Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Other than Permanent Male Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Other than Permanent Male Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Other than Permanent Male Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Other than Permanent Male Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Other than Permanent Male Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Other than Permanent Male Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Permanent Female Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Permanent Female Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Permanent Female Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Permanent Female Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Permanent Female Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Permanent Female Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Permanent Female Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Permanent Female Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Permanent Female Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Permanent Female Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Permanent Male Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Permanent Male Workers paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Permanent Male Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Permanent Male Workers paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Permanent Male Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Permanent Male Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Permanent Male Workers paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Permanent Male Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Permanent Male Workers paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Permanent Male Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Other than Permanent Female Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Other than Permanent Female Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Other than Permanent Female Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Other than Permanent Female Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Other than Permanent Female Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Other than Permanent Female Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Other than Permanent Female Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Other than Permanent Female Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Other than Permanent Female Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Other than Permanent Female Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Other than Permanent Male Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Other than Permanent Male Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Other than Permanent Male Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Other than Permanent Male Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Other than Permanent Male Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Other than Permanent Male Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Other than Permanent Male Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Other than Permanent Male Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Other than Permanent Male Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Other than Permanent Male Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Permanent Female Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Permanent Female Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Permanent Female Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Permanent Female Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Permanent Female Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Permanent Female Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Permanent Female Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Permanent Female Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Permanent Female Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Permanent Female Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (F/D) of Permanent Male Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (F) of Permanent Male Employees paid More than Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (E/D) of Permanent Male Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (E) of Permanent Male Employees paid Equal to Minimum Wage in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (D) number of Permanent Male Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (C/A) of Permanent Male Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (C) of Permanent Male Employees paid More than Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Percentage (B/A) of Permanent Male Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Number (B) of Permanent Male Employees paid Equal to Minimum Wage in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 2, what is the Total (A) number of Permanent Male Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Total Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Total Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Total Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Total Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Total Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Total Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Other than permanent Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Other than permanent Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Other than permanent Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Other than permanent Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Other than permanent Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Other than permanent Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Permanent Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Permanent Workers covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Permanent Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Permanent Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Permanent Workers covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Permanent Workers in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Total Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Total Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Total Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Total Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Total Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Total Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Other than permanent Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Other than permanent Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Other than permanent Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Other than permanent Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Other than permanent Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Other than permanent Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (D) of Permanent Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (C) number of Permanent Employees in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (D/C) of Permanent Employees covered by training on human rights issues in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Percentage (B/A) of Permanent Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Number (B) of Permanent Employees covered by training on human rights issues in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 1, what is the Total (A) number of Permanent Employees in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Other human rights related issues complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Other human rights related issues complaints Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Other human rights related issues complaints Filed during the year in the Previous Financial Year?
+ Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Other human rights related issues complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Other human rights related issues complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Other human rights related issues complaints Filed during the year in the Current Financial Year?
+ Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Wages related complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Wages related complaints Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Wages related complaints Filed during the year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Wages related complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Wages related complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Wages related complaints Filed during the year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Forced Labour/Involuntary Labour complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Forced Labour/Involuntary Labour complaints Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Forced Labour/Involuntary Labour complaints Filed during the year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Forced Labour/Involuntary Labour complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Forced Labour/Involuntary Labour complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Forced Labour/Involuntary Labour complaints Filed during the year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Child Labour complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Child Labour complaints Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Child Labour complaints Filed during the year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Child Labour complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Child Labour complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Child Labour complaints Filed during the year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Discrimination at workplace complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Discrimination at workplace complaints Pending resolution at the end of year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Discrimination at workplace complaints Filed during the year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Discrimination at workplace complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Discrimination at workplace complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Discrimination at workplace complaints Filed during the year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Sexual Harassment complaints in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Sexual Harassment complaints Pending resolution at the end of year in the Previous Financial Year?
+ Under Section C, Principle 5, Essential Indicator 6, what is the number of Sexual Harassment complaints Filed during the year in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, provide Remarks regarding Sexual Harassment complaints in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Sexual Harassment complaints Pending resolution at the end of year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 6, what is the number of Sexual Harassment complaints Filed during the year in the Current Financial Year?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Female Workers?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Female Workers?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Male Workers?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Male Workers?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Female Employees other than BoD and KMP?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Female Employees other than BoD and KMP?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Male Employees other than BoD and KMP?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Male Employees other than BoD and KMP?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Female Key Managerial Personnel?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Female Key Managerial Personnel?
+
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Male Key Managerial Personnel?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Male Key Managerial Personnel?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Female Board of Directors (BoD)?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Female Board of Directors (BoD)?
+Under Section C, Principle 5, Essential Indicator 3, what is the Median remuneration/ salary/ wages of Male Board of Directors (BoD)?
+Under Section C, Principle 5, Essential Indicator 3, what is the Number of Male Board of Directors (BoD)?
+ Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Others – please specify?
+Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Wages?
+Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Discrimination at workplace
+Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Sexual harassment?
+Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Forced/involuntary labour?
+Under Section C, Principle 5, Essential Indicator 9, what is the % of your plants and offices that were assessed (by entity or statutory authorities or third parties) for Child labour?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Others – please specify?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Wages?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Forced Labour/Involuntary Labour?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Child Labour?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Discrimination at workplace?
+Under Section C, Principle 5, Leadership Indicator 4, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Sexual Harassment?
+Under Section C, Essential Indicator 1, what is the Energy intensity (optional) (relevant metric selected by the entity) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Energy intensity (optional) (relevant metric selected by the entity) in the Current Financial Year?
+Under Section C, Essential Indicator 1, what is the Energy intensity per rupee of turnover (Total energy consumption/ turnover in rupees) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Energy intensity per rupee of turnover (Total energy consumption/ turnover in rupees) in the Current Financial Year?
+Under Section C, Essential Indicator 1, what is the Total energy consumption (A+B+C) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Total energy consumption (A+B+C) in the Current Financial Year?
+Under Section C, Essential Indicator 1, what is the Energy consumption through other sources (C) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Energy consumption through other sources (C) in the Current Financial Year?
+Under Section C, Essential Indicator 1, what is the Total fuel consumption (B) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Total fuel consumption (B) in the Current Financial Year?
+Under Section C, Essential Indicator 1, what is the Total electricity consumption (A) in the Previous Financial Year?
+Under Section C, Essential Indicator 1, what is the Total electricity consumption (A) in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Water intensity (optional) (relevant metric selected by the entity) in the Previous Financial Year?
+ Under Section C, Essential Indicator 3, what is the Water intensity (optional) (relevant metric selected by the entity) in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Water intensity per rupee of turnover (Water consumed / turnover) in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water intensity per rupee of turnover (Water consumed / turnover) in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Total volume of water consumption (in kilolitres) in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Total volume of water consumption (in kilolitres) in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Total volume of water withdrawal (in kilolitres) in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Total volume of water withdrawal (in kilolitres) in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Others in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Others in the Current Financial Year?
+
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Seawater / desalinated water in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Seawater / desalinated water in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Third party water in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Third party water in the Current Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Groundwater in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Groundwater in the Current Financial Year?
+ Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Surface water in the Previous Financial Year?
+Under Section C, Essential Indicator 3, what is the Water withdrawal by source from Surface water in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Other emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Other emissions in the Current Financial Year?
+
+Under Section C, Essential Indicator 5, what is the Unit specified for Other emissions?
+Under Section C, Essential Indicator 5, what is the value of Hazardous air pollutants (HAP) emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Hazardous air pollutants (HAP) emissions in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the Unit specified for Hazardous air pollutants (HAP) emissions?
+Under Section C, Essential Indicator 5, what is the value of Volatile organic compounds (VOC) emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Volatile organic compounds (VOC) emissions in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the Unit specified for Volatile organic compounds (VOC) emissions?
+Under Section C, Essential Indicator 5, what is the value of Persistent organic pollutants (POP) emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Persistent organic pollutants (POP) emissions in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the Unit specified for Persistent organic pollutants (POP) emissions?
+Under Section C, Essential Indicator 5, what is the value of Particulate matter (PM) emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of Particulate matter (PM) emissions in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the Unit specified for Particulate matter (PM) emissions?
+Under Section C, Essential Indicator 5, what is the value of SOx emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of SOx emissions in the Current Financial Year?
+nder Section C, Essential Indicator 5, what is the Unit specified for SOx emissions?
+Under Section C, Essential Indicator 5, what is the value of NOx emissions in the Previous Financial Year?
+Under Section C, Essential Indicator 5, what is the value of NOx emissions in the Current Financial Year?
+Under Section C, Essential Indicator 5, what is the Unit specified for NOx emissions?
+Under Section C, Essential Indicator 6, what is the Total Scope 1 and Scope 2 emission intensity (optional) (relevant metric selected by the entity) in the Previous Financial Year?
+Under Section C, Essential Indicator 6, what is the Total Scope 1 and Scope 2 emission intensity (optional) (relevant metric selected by the entity) in the Current Financial Year?
+Under Section C, Essential Indicator 6, what is the Total Scope 1 and Scope 2 emissions per rupee of turnover in the Previous Financial Year?
+Under Section C, Essential Indicator 6, what is the Total Scope 1 and Scope 2 emissions per rupee of turnover in the Current Financial Year?
+Under Section C, Essential Indicator 6, what are the Total Scope 2 emissions (Metric tonnes of CO2 equivalent) in the Previous Financial Year?
+Under Section C, Essential Indicator 6, what are the Total Scope 2 emissions (Metric tonnes of CO2 equivalent) in the Current Financial Year?
+Under Section C, Essential Indicator 6, what are the Total Scope 1 emissions (Metric tonnes of CO2 equivalent) in the Previous Financial Year?
+Under Section C, Essential Indicator 6, what are the Total Scope 1 emissions (Metric tonnes of CO2 equivalent) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total waste disposed (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total waste disposed (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste disposed by (iii) Other disposal operations (in metric tonnes) in the Previous Financial Year?
+ Under Section C, Essential Indicator 8, what is the total waste disposed by (iii) Other disposal operations (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste disposed by (ii) Landfilling (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste disposed by (ii) Landfilling (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste disposed by (i) Incineration (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste disposed by (i) Incineration (in metric tonnes) in the Current Financial Year?
+Field_1236
+Field_1237
+Under Section C, Essential Indicator 8, what is the Total waste recovered (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total waste recovered (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (iii) Other recovery operations (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (iii) Other recovery operations (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (ii) Re-using (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (ii) Re-using (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (i) Recycling (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the total waste recovered through (i) Recycling (in metric tonnes) in the Current Financial Year?
+ Under Section C, Essential Indicator 8, what is the Total Waste generated (A+B+C+D+E+F+G+H) (in metric tonnes) in the Previous Financial Year?
+ Under Section C, Essential Indicator 8, what is the Total Waste generated (A+B+C+D+E+F+G+H) (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Other Non-hazardous waste generated (H) (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Other Non-hazardous waste generated (H) (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Other Hazardous waste (G) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Other Hazardous waste (G) generated (in metric tonnes) in the Current Financial Year?
+ Under Section C, Essential Indicator 8, what is the Total Radioactive waste (F) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Radioactive waste (F) generated (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Battery waste (E) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Battery waste (E) generated (in metric tonnes) in the Current Financial Year?
+ Under Section C, Essential Indicator 8, what is the Total Construction and demolition waste (D) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Construction and demolition waste (D) generated (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Bio-medical waste (C) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Bio-medical waste (C) generated (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total E-waste (B) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total E-waste (B) generated (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Plastic waste (A) generated (in metric tonnes) in the Previous Financial Year?
+Under Section C, Essential Indicator 8, what is the Total Plastic waste (A) generated (in metric tonnes) in the Current Financial Year?
+Under Section C, Essential Indicator 10, for the Second Operation Entry, indicate Whether the conditions of environmental approval / clearance are being complied with? (Y/N)_ If no, provide the reasons thereof and corrective action taken, if any_
+Under Section C, Essential Indicator 10, what is the Type of operations for the Second Operation Entry?
+Under Section C, Essential Indicator 10, what is the Location of operations/offices for the Second Operation Entry?
+Under Section C, Essential Indicator 10, what is the S_ No_ for the Second Operation Entry located in/around ecologically sensitive areas?
+Under Section C, Essential Indicator 10, for the First Operation Entry, indicate Whether the conditions of environmental approval / clearance are being complied with? (Y/N)_ If no, provide the reasons thereof and corrective action taken, if any_
+Under Section C, Essential Indicator 10, what is the Type of operations for the First Operation Entry?
+Under Section C, Essential Indicator 10, what is the Location of operations/offices for the First Operation Entry?
+Under Section C, Essential Indicator 10, what is the S_ No_ for the First Operation Entry located in/around ecologically sensitive areas?
+Under Section C, Principle 6, Essential Indicator 12, what is the Corrective action taken, if any for the Second Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, what are Any fines / penalties / action taken by regulatory agencies such as pollution control boards or by courts for the Second Non-compliance Entry?
+
+Under Section C, Principle 6, Essential Indicator 12, Provide details of the non-compliance for the Second Non-compliance Entry?
+
+Under Section C, Principle 6, Essential Indicator 12, Specify the law / regulation / guidelines which was not complied with for the Second Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, what is the S_ No_ for the Second Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, what is the Corrective action taken, if any for the First Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, what are Any fines / penalties / action taken by regulatory agencies such as pollution control boards or by courts for the First Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, Provide details of the non-compliance for the First Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, Specify the law / regulation / guidelines which was not complied with for the First Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 12, what is the S_ No_ for the First Non-compliance Entry?
+Under Section C, Principle 6, Essential Indicator 11, provide the Relevant Web link for the Second Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, indicate whether Results communicated in public domain (Yes / No) for the Second Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, indicate Whether conducted by independent external agency (Yes / No) for the Second Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the Date of the EIA for the Second Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the EIA Notification No_ for the Second Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the Name and brief details of project for the Second Project Entry?
+ Under Section C, Principle 6, Essential Indicator 11, provide the Relevant Web link for the First Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, indicate whether Results communicated in public domain (Yes / No) for the First Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, indicate Whether conducted by independent external agency (Yes / No) for the First Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the Date of the EIA for the First Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the EIA Notification No_ for the First Project Entry?
+Under Section C, Principle 6, Essential Indicator 11, what is the Name and brief details of project for the First Project Entry?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total energy consumed from non-renewable sources (D+E+F) in the Previous Financial Year?
+
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total energy consumed from non-renewable sources (D+E+F) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Energy consumption through other sources (F) from non-renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Energy consumption through other sources (F) from non-renewable sources in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total fuel consumption (E) from non-renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total fuel consumption (E) from non-renewable sources in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total electricity consumption (D) from non-renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total electricity consumption (D) from non-renewable sources in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total energy consumed from renewable sources (A+B+C) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total energy consumed from renewable sources (A+B+C) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Energy consumption through other sources (C) from renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Energy consumption through other sources (C) from renewable sources in the Current Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 1, what is the Total fuel consumption (B) from renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total fuel consumption (B) from renewable sources in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total electricity consumption (A) from renewable sources in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 1, what is the Total electricity consumption (A) from renewable sources in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the Total water discharged (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the Total water discharged (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged to Others With treatment (in kilolitres) in the Previous Financial Year?
+
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged to Others With treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged to Others with No treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged to Others with No treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged Sent to third-parties With treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged Sent to third-parties With treatment (in kilolitres) in the Current Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged Sent to third-parties with No treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged Sent to third-parties with No treatment (in kilolitres) in the Current Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Seawater With treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Seawater With treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Seawater with No treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Seawater with No treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Groundwater With treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Groundwater With treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Groundwater with No treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Groundwater with No treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Surface water With treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Surface water With treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Surface water with No treatment (in kilolitres) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 2, what is the volume of water discharged To Surface water with No treatment (in kilolitres) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Seawater With treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Seawater With treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Seawater with No treatment in areas of water stress in the Previous Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Seawater with No treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Groundwater With treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Groundwater With treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Groundwater with No treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Groundwater with No treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Surface water With treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Surface water With treatment in areas of water stress in the Current Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Surface water with No treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Into Surface water with No treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water intensity (optional) in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water intensity (optional) in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water intensity per rupee of turnover in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water intensity per rupee of turnover in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total volume of water consumption in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total volume of water consumption in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total volume of water withdrawal in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total volume of water withdrawal in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Others in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Others in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Seawater / desalinated water in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Seawater / desalinated water in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Third party water in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Third party water in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Groundwater in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Groundwater in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Surface water in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Water withdrawal from Surface water in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 4, what is the Total Scope 3 emission intensity (optional) (relevant metric selected by the entity) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 4, what is the Total Scope 3 emission intensity (optional) (relevant metric selected by the entity) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 4, what are the Total Scope 3 emissions per rupee of turnover in the Previous Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 4, what are the Total Scope 3 emissions per rupee of turnover in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 4, what are the Total Scope 3 emissions (Metric tonnes of CO2 equivalent) in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 4, what are the Total Scope 3 emissions (Metric tonnes of CO2 equivalent) in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total water discharged in areas of water stress in the Previous Financial Year?
+
+Under Section C, Principle 6, Leadership Indicator 3, what is the Total water discharged in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged to Others With treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged to Others With treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged to Others with No treatment in areas of water stress in the Previous Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged to Others with No treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Sent to third-parties With treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Sent to third-parties With treatment in areas of water stress in the Current Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Sent to third-parties with No treatment in areas of water stress in the Previous Financial Year?
+Under Section C, Principle 6, Leadership Indicator 3, what is the volume of water discharged Sent to third-parties with No treatment in areas of water stress in the Current Financial Year?
+ Under Section C, Principle 6, Leadership Indicator 6, what is the Outcome of the initiative for the First Initiative Entry?
+Under Section C, Principle 6, Leadership Indicator 6, provide Details of the initiative (Web-link, if any, may be provided along-with summary) for the First Initiative Entry?
+Under Section C, Principle 6, Leadership Indicator 6, what is the Initiative undertaken for the First Initiative Entry?
+
+Under Section C, Principle 6, Leadership Indicator 6, what is the Sr_ No for the First Initiative Entry regarding resource efficiency or reducing impact?
+Under Section C, Principle 7, Leadership Indicator 1, provide the Web Link, if available for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Frequency of Review by Board (Annually/ Half yearly/ Quarterly / Others) for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, Whether information available in public domain? (Yes/No) for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Method resorted for such advocacy for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Public policy advocated for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the S_ No_ for the Second Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, provide the Web Link, if available for the First Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Frequency of Review by Board (Annually/ Half yearly/ Quarterly / Others) for the First Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, Whether information available in public domain? (Yes/No) for the First Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Method resorted for such advocacy for the First Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the Public policy advocated for the First Advocacy Entry?
+Under Section C, Principle 7, Leadership Indicator 1, what is the S_ No_ for the First Advocacy Entry?
+Under Section C, Principle 7, Essential Indicator 2, what is the Corrective action taken for the Second Case Entry?
+Under Section C, Principle 7, Essential Indicator 2, what is the Brief of the case for the Second Case Entry?
+Under Section C, Principle 7, Essential Indicator 2, what is the Corrective action taken for the First Case Entry?
+Under Section C, Principle 7, Essential Indicator 2, what is the Brief of the case for the First Case Entry?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 10?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 10?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 9?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 9?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 8?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 8?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 7?
+ Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 7?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 6?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 6?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 5?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 5?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 4?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 4?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 3?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 3?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 2?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 2?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Reach of trade and industry chambers/ associations (State/National) for S_ No_ 1?
+Under Section C, Principle 7, Essential Indicator 1b, what is the Name of the trade and industry chambers/ associations for S_ No_ 1?
+Under Section C, Principle 8, Essential Indicator 2, what are the Amounts paid to PAFs in the FY (In INR) for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the % of PAFs covered by R&R for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the No_ of Project Affected Families (PAFs) for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the District for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the State for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the Name of Project for which R&R is ongoing for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the S_ No_ for the Second R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what are the Amounts paid to PAFs in the FY (In INR) for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the % of PAFs covered by R&R for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the No_ of Project Affected Families (PAFs) for the First R&R Project Entry?
+
+Under Section C, Principle 8, Essential Indicator 2, what is the District for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the State for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the Name of Project for which R&R is ongoing for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 2, what is the S_ No_ for the First R&R Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, provide the Relevant Web link for the Second SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, indicate whether Results communicated in public domain (Yes / No) for the Second SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, indicate Whether conducted by independent external agency (Yes / No) for the Second SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, what is the Date of notification for the Second SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, what is the SIA Notification No_ for the Second SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, what is the Name and brief details of project for the First SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, provide the Relevant Web link for the First SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, indicate whether Results communicated in public domain (Yes / No) for the First SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, indicate Whether conducted by independent external agency (Yes / No) for the First SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, what is the Date of notification for the First SIA Project Entry?
+Under Section C, Principle 8, Essential Indicator 1, what is the SIA Notification No_ for the First SIA Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the Amount spent (In INR) for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the Aspirational District for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the State for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the S_ No_ for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the Amount spent (In INR) for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the Aspirational District for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the State for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 2, what is the S_ No_ for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 1, what is the Corrective action taken for the Second Impact Entry?
+Under Section C, Principle 8, Leadership Indicator 1, what are the Details of negative social impact identified for the Second Impact Entry?
+Under Section C, Principle 8, Leadership Indicator 1, what is the Corrective action taken for the First Impact Entry?
+Under Section C, Principle 8, Leadership Indicator 1, what are the Details of negative social impact identified for the First Impact Entry?
+Under Section C, Principle 8, Essential Indicator 4, what is the percentage of input material sourced directly from within the district and neighbouring districts in the Previous Financial Year?
+Under Section C, Principle 8, Essential Indicator 4, what is the percentage of input material sourced directly from within the district and neighbouring districts in the Current Financial Year?
+Under Section C, Principle 8, Essential Indicator 4, what is the percentage of input material directly sourced from MSMEs/ small producers in the Previous Financial Year?
+Under Section C, Principle 8, Essential Indicator 4, what is the percentage of input material directly sourced from MSMEs/ small producers in the Current Financial Year?
+Under Section C, Principle 8, Leadership Indicator 6, what is the % of beneficiaries from vulnerable and marginalized groups for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the No_ of persons benefitted from CSR Projects for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the name of the CSR Project for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the S_ No_ for the Second CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the % of beneficiaries from vulnerable and marginalized groups for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the No_ of persons benefitted from CSR Projects for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the name of the CSR Project for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 6, what is the S_ No_ for the First CSR Project Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Corrective action taken for the Second Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Brief of the Case for the Second Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Name of authority for the Second Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Corrective action taken for the First Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Brief of the Case for the First Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 5, what is the Name of authority for the First Dispute Entry?
+Under Section C, Principle 8, Leadership Indicator 4, what is the Basis of calculating benefit share for the Second IP Entry?
+
+Under Section C, Principle 8, Leadership Indicator 4, indicate whether Benefit shared (Yes / No) for the Second IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, indicate whether the IP is Owned/ Acquired (Yes/No) for the Second IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, what is the Intellectual Property based on traditional knowledge for the Second IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, what is the S_ No_ for the Second IP Entry based on traditional knowledge?
+Under Section C, Principle 8, Leadership Indicator 4, what is the Basis of calculating benefit share for the First IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, indicate whether Benefit shared (Yes / No) for the First IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, indicate whether the IP is Owned/ Acquired (Yes/No) for the First IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, what is the Intellectual Property based on traditional knowledge for the First IP Entry?
+Under Section C, Principle 8, Leadership Indicator 4, what is the S_ No_ for the First IP Entry based on traditional knowledge?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding Other consumer complaints in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of Other consumer complaints Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of Other consumer complaints Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding Other consumer complaints in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of Other consumer complaints Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of Other consumer complaints Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Unfair Trade Practices in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Unfair Trade Practices Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Unfair Trade Practices Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Unfair Trade Practices in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Unfair Trade Practices Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Unfair Trade Practices Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Restrictive Trade Practices in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Restrictive Trade Practices Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Restrictive Trade Practices Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Restrictive Trade Practices in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Restrictive Trade Practices Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Restrictive Trade Practices Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Delivery of essential services in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Delivery of essential services Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Delivery of essential services Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Delivery of essential services in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Delivery of essential services Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Delivery of essential services Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Cyber-security in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Cyber-security Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Cyber-security Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Cyber-security in the Current Financial Year?
+ Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Cyber-security Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Cyber-security Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Advertising in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Advertising Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Advertising Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Advertising in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Advertising Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Advertising Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Data privacy in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Data privacy Pending resolution at end of year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Data privacy Received during the year in the Previous Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, provide Remarks regarding consumer complaints on Data privacy in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Data privacy Pending resolution at end of year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 3, what is the number of consumer complaints regarding Data privacy Received during the year in the Current Financial Year?
+Under Section C, Principle 9, Essential Indicator 2, what is the turnover of products/services as a percentage of total turnover that carry information about Recycling and/or safe disposal?
+Under Section C, Principle 9, Essential Indicator 2, what is the turnover of products/services as a percentage of total turnover that carry information about Safe and responsible usage?
+Under Section C, Principle 9, Essential Indicator 4, what are the Reasons for recall for Forced recalls?
+Under Section C, Principle 9, Essential Indicator 4, what is the Number of Forced recalls on account of safety issues?
+Under Section C, Principle 9, Essential Indicator 4, what are the Reasons for recall for Voluntary recalls?
+Under Section C, Principle 9, Essential Indicator 4, what is the Number of Voluntary recalls on account of safety issues?
+Under Section C, Principle 1, Leadership Indicator 1, what is the %age of value chain partners covered (by value of business done with such partners) under the awareness programmes?
+Under Section C, Principle 3, Essential Indicator 14, what is the % of your plants and offices that were assessed regarding Health and safety practices?
+Under Section C, Principle 3, Leadership Indicator 5, what is the % of value chain partners (by value of business done with such partners) that were assessed regarding Health and safety practices?
+Under Section C, Principle 7, Essential Indicator 2, what is the Name of authority for the First Case Entry related to anti-competitive conduct?
+Under Section C, Principle 7, Essential Indicator 2, what is the Name of authority for the Second Case Entry related to anti-competitive conduct?
+Under Section C, Principle 8, Essential Indicator 1, what is the Name and brief details of project for the Second SIA Project Entry?
+Under Section C, Principle 9, Essential Indicator 2, what is the turnover of products/services as a percentage of total turnover that carry information about Environmental and social parameters relevant to the product?
+Under Section C, Principle 1, Essential Indicator 4, Does the entity have an anti-corruption or anti-bribery policy? If yes, provide details in brief and if available, provide a web-link to the policy_
+Under Section C, Principle 1, Essential Indicator 7, provide details of any corrective action taken or underway on issues related to fines / penalties / action taken by regulators/ law enforcement agencies/ judicial institutions, on cases of corruption and conflicts of interest_
+Under Section C, Principle 2, Essential Indicator 2a, Does the entity have procedures in place for sustainable sourcing? (Yes/No)
+Under Section C, Principle 2, Essential Indicator 2b, If yes, what percentage of inputs were sourced sustainably?
+Under Section C, Principle 2, Essential Indicator 3, Describe the processes in place to safely reclaim your products for reusing, recycling and disposing at the end of life, for (a) Plastics (including packaging), (b) E-waste, (c) Hazardous waste, and (d) other waste_
+Under Section C, Principle 2, Essential Indicator 4, indicate Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities (Yes / No)_ If yes, whether the waste collection plan is in line with the Extended Producer Responsibility (EPR) plan submitted to Pollution Control Boards? If not, provide steps taken to address the same_
+Under Section C, Principle 1, Leadership Indicator 2, Does the entity have processes in place to avoid/ manage conflict of interests involving members of the Board? (Yes/No) If Yes, provide details of the same_
+ Under Section C, Principle 3, Essential Indicator 3, Are the premises / offices of the entity accessible to differently abled employees and workers, as per the requirements of the Rights of Persons with Disabilities Act, 2016? If not, whether any steps are being taken by the entity in this regard_
+Under Section C, Principle 3, Essential Indicator 4, Does the entity have an equal opportunity policy as per the Rights of Persons with Disabilities Act, 2016? If so, provide a web-link to the policy_
+Under Section C, Principle 3, Essential Indicator 10a, Whether an occupational health and safety management system has been implemented by the entity? (Yes/ No)_ If yes, what is the coverage of such system?
+Under Section C, Principle 3, Essential Indicator 10b, What are the processes used to identify work-related hazards and assess risks on a routine and non-routine basis by the entity?
+Under Section C, Principle 3, Essential Indicator 10c, Whether you have processes for workers to report the work related hazards and to remove themselves from such risks? (Y/N)
+Under Section C, Principle 3, Essential Indicator 10d, Do the employees/ worker of the entity have access to non-occupational medical and healthcare services? (Yes/ No)
+Under Section C, Principle 3, Essential Indicator 12, Describe the measures taken by the entity to ensure a safe and healthy work place_
+Under Section C, Principle 3, Essential Indicator 15, Provide details of any corrective action taken or underway to address safety-related incidents (if any) and on significant risks / concerns arising from assessments of health & safety practices and working conditions_
+Under Section C, Principle 3, Leadership Indicator 1, Does the entity extend any life insurance or any compensatory package in the event of death of (A) Employees (Y/N) (B) Workers (Y/N)?
+Under Section C, Principle 3, Leadership Indicator 2, Provide the measures undertaken by the entity to ensure that statutory dues have been deducted and deposited by the value chain partners_
+Under Section C, Principle 3, Leadership Indicator 4, Does the entity provide transition assistance programs to facilitate continued employability and the management of career endings resulting from retirement or termination of employment? (Yes/ No)
+Under Section C, Principle 3, Leadership Indicator 6, Provide details of any corrective actions taken or underway to address significant risks / concerns arising from assessments of health and safety practices and working conditions of value chain partners_
+Under Section C, Principle 4, Essential Indicator 1, Describe the processes for identifying key stakeholder groups of the entity_
+Under Section C, Principle 4, Leadership Indicator 1, Provide the processes for consultation between stakeholders and the Board on economic, environmental, and social topics or if consultation is delegated, how is feedback from such consultations provided to the Board_
+Under Section C, Principle 4, Leadership Indicator 2, Whether stakeholder consultation is used to support the identification and management of environmental, and social topics (Yes / No)_ If so, provide details of instances as to how the inputs received from stakeholders on these topics were incorporated into policies and activities of the entity_
+Under Section C, Principle 4, Leadership Indicator 3, Provide details of instances of engagement with, and actions taken to, address the concerns of vulnerable/ marginalized stakeholder groups_
+Under Section C, Principle 5, Essential Indicator 7, describe the Mechanisms to prevent adverse consequences to the complainant in discrimination and harassment cases_
+Under Section C, Principle 5, Essential Indicator 8, Do human rights requirements form part of your business agreements and contracts? (Yes/No)
+Under Section C, Principle 5, Essential Indicator 10, Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 9 above_
+Under Section C, Principle 5, Leadership Indicator 1, provide Details of a business process being modified / introduced as a result of addressing human rights grievances/complaints_
+Under Section C, Principle 5, Leadership Indicator 2, provide Details of the scope and coverage of any Human rights due-diligence conducted_
+Under Section C, Principle 5, Leadership Indicator 3, Is the premise/office of the entity accessible to differently abled visitors, as per the requirements of the Rights of Persons with Disabilities Act, 2016?
+Under Section C, Principle 5, Leadership Indicator 5, Provide details of any corrective actions taken or underway to address significant risks / concerns arising from the assessments at Question 4 above_
+Under Section C, Essential Indicator 2, Does the entity have any sites / facilities identified as designated consumers (DCs) under the Performance, Achieve and Trade (PAT) Scheme of the Government of India? (Y/N)_ If yes, disclose whether targets set under the PAT scheme have been achieved_ In case targets have not been achieved, provide the remedial action taken, if any_
+Under Section C, Essential Indicator 4, Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage and implementation_
+Under Section C, Essential Indicator 7, Does the entity have any project related to reducing Green House Gas emission? If Yes, then provide details_
+Under Section C, Essential Indicator 9, Briefly describe the waste management practices adopted in your establishments_ Describe the strategy adopted by your company to reduce usage of hazardous and toxic chemicals in your products and processes and the practices adopted to manage such wastes_
+Under Section C, Principle 6, Leadership Indicator 5, With respect to the ecologically sensitive areas reported at Question 10 of Essential Indicators, provide details of significant direct & indirect impact of the entity on biodiversity in such areas along-with prevention and remediation activities_
+ Under Section C, Principle 6, Leadership Indicator 7, Does the entity have a business continuity and disaster management plan? Give details in 100 words/ web link_
+Under Section C, Principle 6, Leadership Indicator 8, Disclose any significant adverse impact to the environment, arising from the value chain of the entity_ What mitigation or adaptation measures have been taken by the entity in this regard_
+
+ Under Section C, Principle 6, Leadership Indicator 9, what is the Percentage of value chain partners (by value of business done with such partners) that were assessed for environmental impacts?
+Under Section C, Principle 8, Essential Indicator 3, Describe the mechanisms to receive and redress grievances of the community_
+Under Section C, Principle 9, Essential Indicator 1, Describe the mechanisms in place to receive and respond to consumer complaints and feedback_
+Under Section C, Principle 9, Essential Indicator 5, Does the entity have a framework/ policy on cyber security and risks related to data privacy? (Yes/No) If available, provide a web-link of the policy_
+Under Section C, Principle 9, Essential Indicator 6, Provide details of any corrective actions taken or underway on issues relating to advertising, and delivery of essential services; cyber security and data privacy of customers; re-occurrence of instances of product recalls; penalty / action taken by regulatory authorities on safety of products / services_
+Under Section C, Principle 9, Leadership Indicator 1, list the Channels / platforms where information on products and services of the entity can be accessed (provide web link, if available)_
+ Under Section C, Principle 9, Leadership Indicator 2, describe the Steps taken to inform and educate consumers about safe and responsible usage of products and/or services_
+Under Section C, Principle 9, Leadership Indicator 3, describe the Mechanisms in place to inform consumers of any risk of disruption/discontinuation of essential services_
+Under Section C, Principle 9, Leadership Indicator 4, Does the entity display product information on the product over and above what is mandated as per local laws? (Yes/No/Not Applicable) (If yes, provide details)_ Also, Did your entity carry out any survey with regard to consumer satisfaction relating to the major products / services, significant locations, or the entity as a whole? (Yes/No)_
+Under Section C, Principle 9, Leadership Indicator 5a, provide the Number of instances of data breaches along-with impact_
+Under Section C, Principle 3, Essential Indicator 2, for PF, what is the No_ of employees covered as a % of total employees in the Previous Financial Year?
+Under Section C, Principle 3, Essential Indicator 8, what is the Total (D) number of Female Workers in the Previous Financial Year?
+Under Section C, Principle 5, Essential Indicator 4, Do you have a focal point (Individual/ Committee) responsible for addressing human rights impacts or issues caused or contributed to by the business? (Yes/No)
+Under Section C, Principle 5, Essential Indicator 5, Describe the internal mechanisms in place to redress grievances related to human rights issues_
+Under Section C, Principle 6, Essential Indicator 12, Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India (such as the Water Act, Air Act, Environment Protection Act and rules thereunder)? (Y/N)_
+Under Section C, Principle 6, Leadership Indicator 3, what is the Name of the area (water stress) for the facility/plant?
+Under Section C, Principle 6, Leadership Indicator 3, what is the Nature of operations for the facility/plant in the water stress area?
+Under Section C, Principle 7, Essential Indicator 1a, what is the Number of affiliations with trade and industry chambers/ associations?
+Under Section C, Principle 8, Leadership Indicator 3(a), Do you have a preferential procurement policy where you give preference to purchase from suppliers comprising marginalized /vulnerable groups? (Yes/No)
+Under Section C, Principle 8, Leadership Indicator 3(b), From which marginalized /vulnerable groups do you procure?
+Under Section C, Principle 8, Leadership Indicator 3(c), What percentage of total procurement (by value) does it constitute?
+Under Section C, Principle 9, Leadership Indicator 5b, provide the Percentage of data breaches involving personally identifiable information of customers_

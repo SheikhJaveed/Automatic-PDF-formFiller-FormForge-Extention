@@ -1,20 +1,16 @@
 const express = require('express');
-const { PDFDocument, StandardFonts, PDFName, PDFString, TextAlignment, rgb } = require('pdf-lib');
+const { PDFDocument, StandardFonts, PDFName, PDFString, TextAlignment, rgb, PDFBool } = require('pdf-lib');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const { spawn } = require('child_process'); // <--- CRITICAL IMPORT
+const { spawn } = require('child_process');
 
 const app = express();
 const PORT = 5000;
-
-// --- SETUP STORAGE ---
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
-if (!fs.existsSync(UPLOADS_DIR)) {
-    fs.mkdirSync(UPLOADS_DIR);
-}
+if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR);
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, UPLOADS_DIR),
@@ -22,191 +18,177 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// --- MIDDLEWARE ---
 app.use(cors());
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use('/files', express.static(UPLOADS_DIR));
 
-// --- HELPER: RUN PYTHON SCRIPT ---
 const detectFieldsWithPython = (filePath) => {
     return new Promise((resolve, reject) => {
-        // Use 'python' for Windows. If on Mac/Linux, you might need 'python3'
-        const pythonProcess = spawn('python', ['detector.py', filePath]);
-
+        const cmd = process.platform === "win32" ? "python" : "python3";
+        const pythonProcess = spawn(cmd, ['detector.py', filePath]);
         let dataString = '';
-        let errorString = '';
-
-        // Collect data from Python's print() statements
-        pythonProcess.stdout.on('data', (data) => {
-            dataString += data.toString();
-        });
-
-        // Collect errors
-        pythonProcess.stderr.on('data', (data) => {
-            errorString += data.toString();
-        });
-
+        pythonProcess.stdout.on('data', (d) => dataString += d.toString());
         pythonProcess.on('close', (code) => {
-            if (errorString) {
-                console.warn("Python Warnings/Errors:", errorString);
-            }
-
-            if (code !== 0) {
-                reject("Python script exited with error code " + code);
-                return;
-            }
-
-            try {
-                // Parse the JSON array printed by Python
-                const fields = JSON.parse(dataString);
-                resolve(fields);
-            } catch (e) {
-                console.error("Failed to parse Python response:", dataString);
-                reject("Invalid JSON from Python");
-            }
+            try { resolve(JSON.parse(dataString)); } catch (e) { resolve([]); }
         });
     });
 };
 
-// --- ROUTE 1: UPLOAD & DETECT ---
-app.post('/upload', upload.single('pdf'), async (req, res) => {
+const extractExistingFields = async (filePath) => {
     try {
-        if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
+        const pdfBytes = fs.readFileSync(filePath);
+        const pdfDoc = await PDFDocument.load(pdfBytes);
+        const form = pdfDoc.getForm();
+        const fields = form.getFields();
+        if (fields.length === 0) return null;
 
-        console.log(`Analyzing PDF: ${req.file.filename}...`);
+        const extractedData = [];
+        const FRONTEND_WIDTH = 800;
 
-        // 1. Run the Python Auto-Detector
-        const detectedFields = await detectFieldsWithPython(req.file.path);
+        fields.forEach(field => {
+            if (field.acroField.getWidgets) {
+                const widgets = field.acroField.getWidgets();
+                widgets.forEach(widget => {
+                    const rect = widget.getRectangle();
+                    const page = pdfDoc.getPage(pdfDoc.getPages().indexOf(widget.P()));
+                    const scaleFactor = FRONTEND_WIDTH / page.getSize().width;
+                    
+                    let type = 'text';
+                    let subtype = null;
+                    if (field.constructor.name === 'PDFCheckBox') type = 'checkbox';
+                    if (field.constructor.name === 'PDFDropdown') { type = 'text'; subtype = 'dropdown'; }
 
-        console.log(`Success! Detected ${detectedFields.length} fields.`);
-
-        // 2. Return Filename AND Fields to Frontend
-        res.json({ 
-            filename: req.file.filename,
-            fields: detectedFields 
+                    extractedData.push({
+                        id: field.getName(),
+                        type, subtype,
+                        options: subtype === 'dropdown' ? field.getOptions() : [],
+                        page: pdfDoc.getPages().indexOf(widget.P()),
+                        x: rect.x * scaleFactor,
+                        y: (page.getSize().height - rect.y - rect.height) * scaleFactor,
+                        w: rect.width * scaleFactor,
+                        h: rect.height * scaleFactor,
+                        name: field.getName(),
+                        required: field.isRequired(),
+                        fontSize: 0,
+                        align: 'left',
+                        isMultiline: (type === 'text' && field.isMultiline) ? field.isMultiline() : false
+                    });
+                });
+            }
         });
+        return extractedData;
+    } catch (e) { return null; }
+};
 
-    } catch (error) {
-        console.error("Detection Error:", error);
-        res.status(500).json({ error: "Failed to analyze PDF" });
+app.post('/upload', upload.single('pdf'), async (req, res) => {
+    if (!req.file) return res.status(400).json({ error: 'No file' });
+    let detectedFields = await extractExistingFields(req.file.path);
+    if (!detectedFields || detectedFields.length === 0) {
+        detectedFields = await detectFieldsWithPython(req.file.path);
     }
+    res.json({ filename: req.file.filename, fields: detectedFields });
 });
 
-// --- ROUTE 2: PROCESS & DOWNLOAD PDF ---
 app.post('/process-pdf', async (req, res) => {
     try {
         const { filename, fields } = req.body;
-
-        if (!filename || !fields) {
-            return res.status(400).json({ error: 'Missing filename or fields' });
-        }
-
         const filePath = path.join(UPLOADS_DIR, filename);
-        if (!fs.existsSync(filePath)) {
-            return res.status(404).json({ error: 'File not found' });
-        }
-        
+        if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'File lost' });
+
         const existingPdfBytes = fs.readFileSync(filePath);
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
-        
-        // Embed Font
         const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
         const form = pdfDoc.getForm();
-
-        // CONSTANT: Matches Frontend Width
         const FRONTEND_WIDTH = 800;
+
+        form.getFields().map(f => f.getName()).forEach(name => { try { form.removeField(form.getField(name)); } catch(e){} });
 
         fields.forEach((fieldData) => {
             const pageIndex = fieldData.page || 0;
             if (pageIndex >= pdfDoc.getPageCount()) return;
-            
             const page = pdfDoc.getPage(pageIndex);
-            
-            // --- SCALING LOGIC ---
-            const { width: pdfWidth, height: pdfHeight } = page.getSize();
-            const scaleFactor = pdfWidth / FRONTEND_WIDTH;
+            const scaleFactor = page.getSize().width / FRONTEND_WIDTH;
 
             const scaledX = fieldData.x * scaleFactor;
             const scaledY = fieldData.y * scaleFactor;
             const scaledW = fieldData.w * scaleFactor;
             const scaledH = fieldData.h * scaleFactor;
+            const pdfY = page.getSize().height - scaledY - scaledH;
 
-            const pdfY = pdfHeight - scaledY - scaledH;
-
-            // --- FIELD NAME HANDLING ---
             let fieldName = fieldData.name || fieldData.id;
-            
-            // Prevent Duplicate Names Crash
-            if (form.getFields().some(f => f.getName() === fieldName)) {
-                fieldName = `${fieldName}_${Date.now()}`; 
-            }
+            fieldName = fieldName.replace(/\./g, ' ').trim();
 
-            if (fieldData.type === 'checkbox') {
+            // DROPDOWN
+            if (fieldData.subtype === 'dropdown') {
+                try {
+                    const dropdown = form.createDropdown(fieldName);
+                    dropdown.setOptions(fieldData.options || ['Yes', 'No']);
+                    if (fieldData.required) dropdown.enableRequired();
+                    const da = `/Helv 10 Tf 0 g`;
+                    dropdown.acroField.dict.set(PDFName.of('DA'), PDFString.of(da));
+                    dropdown.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1), font: helveticaFont });
+                } catch(e){}
+            } 
+            // CHECKBOX
+            else if (fieldData.type === 'checkbox') {
                 try {
                     const checkBox = form.createCheckBox(fieldName);
                     if (fieldData.required) checkBox.enableRequired();
-                    
-                    checkBox.addToPage(page, {
-                        x: scaledX,
-                        y: pdfY,
-                        width: scaledW,
-                        height: scaledH,
-                        borderWidth: 0,
-                        backgroundColor: rgb(1, 1, 1),
-                    });
-                } catch (err) {}
-            } else {
-                // TEXT FIELD
+                    checkBox.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1) });
+                } catch(e){}
+            } 
+            // TEXT FIELD
+            else {
                 try {
-                    // Handle periods in names
-                    if (fieldName.includes('.')) fieldName = fieldName.replace(/\./g, '_');
-
                     const textField = form.createTextField(fieldName);
                     textField.setText(''); 
 
-                    const fontSize = (fieldData.fontSize || 11) * scaleFactor;
-                    const daString = `/Helv ${fontSize} Tf 0 g`;
-                    textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
-
-                    if (fieldData.align) {
-                        switch (fieldData.align) {
-                            case 'center': textField.setAlignment(TextAlignment.Center); break;
-                            case 'right': textField.setAlignment(TextAlignment.Right); break;
-                            case 'left': default: textField.setAlignment(TextAlignment.Left); break;
-                        }
+                    // --- CRITICAL SIZING LOGIC ---
+                    
+                    if (fieldData.isMultiline) {
+                        // CASE 1: Large Box / Paragraph
+                        // We must enable Multiline. Auto-shrink often fails here.
+                        // We set a reasonable fixed size (10pt).
+                        textField.enableMultiline();
+                        
+                        const fixedSize = 10;
+                        const daString = `/Helv ${fixedSize} Tf 0 g`;
+                        textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
+                    } else {
+                        // CASE 2: Grid Cell / Single Line
+                        // We DISABLE Multiline. We set Font Size 0 (Auto).
+                        // This guarantees the "Government Form" auto-shrink behavior.
+                        // textField.disableMultiline(); // Default is false, but safe to assume
+                        
+                        // Force Auto Size
+                        const daString = `/Helv 0 Tf 0 g`;
+                        textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
                     }
+
+                    if (fieldData.align === 'center') textField.setAlignment(TextAlignment.Center);
+                    else if (fieldData.align === 'right') textField.setAlignment(TextAlignment.Right);
+                    else textField.setAlignment(TextAlignment.Left);
 
                     if (fieldData.required) textField.enableRequired();
 
-                    textField.addToPage(page, {
-                        x: scaledX,
-                        y: pdfY,
-                        width: scaledW,
-                        height: scaledH,
-                        font: helveticaFont,
-                        borderWidth: 0, 
-                        backgroundColor: rgb(1, 1, 1),
-                    });
-
-                } catch (err) {
-                    console.error(`Skipping Field "${fieldName}": ${err.message}`);
-                }
+                    textField.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, font: helveticaFont, borderWidth: 0, backgroundColor: rgb(1,1,1) });
+                } catch(e){}
             }
         });
 
+        const acroForm = pdfDoc.catalog.lookup(PDFName.of('AcroForm'));
+        if (acroForm) acroForm.set(PDFName.of('NeedAppearances'), PDFBool.True);
+
         const pdfBytes = await pdfDoc.save();
-        
         res.setHeader('Content-Type', 'application/pdf');
         res.setHeader('Content-Disposition', `attachment; filename=edited_${filename}`);
         res.send(Buffer.from(pdfBytes));
 
     } catch (error) {
-        console.error('Processing Error:', error);
+        console.error(error);
         res.status(500).json({ error: error.message });
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));

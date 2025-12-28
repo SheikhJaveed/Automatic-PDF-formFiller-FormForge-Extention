@@ -3,20 +3,13 @@ import { BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-do
 import { Document, Page, pdfjs } from 'react-pdf';
 import { Rnd } from 'react-rnd';
 import axios from 'axios';
+import { get, set, del } from 'idb-keyval'; 
 import "./App.css"; 
 
-// Initialize PDF Worker
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-// --- HELPER FUNCTIONS ---
-const genId = () => {
-  if (typeof crypto !== 'undefined' && crypto.randomUUID) {
-    return crypto.randomUUID();
-  }
-  return `id_${Math.random().toString(36).substr(2, 9)}`;
-};
+const genId = () => crypto.randomUUID ? crypto.randomUUID() : `id_${Math.random().toString(36).substr(2, 9)}`;
 
-// --- ICONS ---
 const Icons = {
   Trash: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>,
   Copy: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>,
@@ -28,13 +21,10 @@ const Icons = {
   Check: () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
 };
 
-const FONT_SIZES = Array.from({ length: 20 }, (_, i) => i + 6);
+const FONT_SIZES = [0, ...Array.from({ length: 20 }, (_, i) => i + 6)];
 
-// --- DRAGGABLE FIELD COMPONENT ---
-const DraggableField = ({ field, isSelected, isMultiSelect, onSelect, onUpdate, onDelete, onDuplicate, onDragStopRaw }) => {
+const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDuplicate, onSelect, onUpdate, onDelete, onDuplicateAction, onDragStopRaw }) => {
   const [isNameExpanded, setIsNameExpanded] = useState(false);
-
-  // Position logic
   const isRightSide = field.x > 400;
   const isTopSide = field.y < 110;
 
@@ -44,179 +34,126 @@ const DraggableField = ({ field, isSelected, isMultiSelect, onSelect, onUpdate, 
       position={{ x: field.x, y: field.y }}
       onDragStop={(e, d) => onDragStopRaw(e, d, field.id)}
       onResizeStop={(e, direction, ref, delta, position) => {
-        onUpdate(field.id, {
-          w: parseInt(ref.style.width),
-          h: parseInt(ref.style.height),
-          ...position,
-        });
+        onUpdate(field.id, { w: parseInt(ref.style.width), h: parseInt(ref.style.height), ...position });
       }}
-      onClick={(e) => {
-        e.stopPropagation(); 
-        onSelect(field.id, e); 
-      }}
+      onClick={(e) => { e.stopPropagation(); onSelect(field.id, e); }}
       className={`group m-0 p-0 ${isSelected ? 'z-50' : 'z-10'}`} 
     >
-      {/* 
-         POPUP MENU (Single Select Only) 
-         If multiple items are selected, we HIDE this local menu to prevent clutter.
-      */}
       {isSelected && !isMultiSelect && (
         <div 
           className="absolute bg-white shadow-xl border border-gray-200 rounded-lg p-3 z-50 flex flex-col gap-2"
           style={{ 
-            width: '300px', 
-            left: isRightSide ? 'auto' : '0', 
-            right: isRightSide ? '0' : 'auto',
-            bottom: isTopSide ? 'auto' : '100%',
-            top: isTopSide ? '100%' : 'auto',
-            marginTop: isTopSide ? '10px' : '0',
-            marginBottom: isTopSide ? '0' : '10px',
+            width: '320px', 
+            left: isRightSide ? 'auto' : '0', right: isRightSide ? '0' : 'auto',
+            bottom: isTopSide ? 'auto' : '100%', top: isTopSide ? '100%' : 'auto',
+            marginTop: isTopSide ? '10px' : '0', marginBottom: isTopSide ? '0' : '10px',
           }}
           onMouseDown={(e) => e.stopPropagation()} 
         >
-          {/* Row 1: Name, Req, Actions */}
-          <div className="flex items-start gap-2 border-b border-gray-100 pb-2">
-            <div className="flex flex-col flex-grow relative" style={{ maxWidth: '180px' }}> 
-               <label className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Field Name / Question</label>
-               
-               {!isNameExpanded && (
-                 <div 
-                   className="text-xs font-semibold text-gray-700 bg-gray-50 border border-gray-300 rounded px-2 py-1 h-8 w-full cursor-text hover:bg-white hover:border-blue-400 transition-colors flex items-center"
-                   onClick={() => setIsNameExpanded(true)}
-                   title={field.name} 
+          <div className="flex flex-col gap-2 border-b border-gray-100 pb-2">
+            <div className="flex justify-between items-center">
+                 <label className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Field Name</label>
+                 <select 
+                    value={field.subtype === 'dropdown' ? 'yesno' : field.type}
+                    onChange={(e) => {
+                        const val = e.target.value;
+                        if (val === 'yesno') onUpdate(field.id, { type: 'text', subtype: 'dropdown', options: ['Yes', 'No'] });
+                        else if (val === 'checkbox') onUpdate(field.id, { type: 'checkbox', subtype: null });
+                        else onUpdate(field.id, { type: 'text', subtype: null });
+                    }}
+                    className="text-[10px] border border-blue-200 text-blue-600 rounded px-1 bg-blue-50 font-bold uppercase cursor-pointer outline-none"
                  >
-                   <span className="truncate w-full block">{field.name}</span>
-                 </div>
-               )}
-
-               {isNameExpanded && (
-                 <div className="absolute top-5 left-0 w-[280px] z-50 bg-white border border-blue-400 shadow-2xl rounded-md p-2 flex flex-col gap-2">
-                    <textarea 
-                      autoFocus
-                      value={field.name}
-                      onChange={(e) => onUpdate(field.id, { name: e.target.value })}
-                      className="text-xs font-semibold text-gray-700 outline-none bg-gray-50 border border-gray-200 rounded px-2 py-2 resize-none h-24 w-full"
-                      placeholder="Enter full question text here..."
-                    />
-                    <button 
-                      onClick={() => setIsNameExpanded(false)}
-                      className="self-end flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white text-[10px] font-bold px-3 py-1 rounded shadow-sm transition-colors"
-                    >
-                      <Icons.Check /> DONE
-                    </button>
-                 </div>
-               )}
+                    <option value="text">Text Box</option>
+                    <option value="yesno">Yes/No Dropdown</option>
+                    <option value="checkbox">Checkbox</option>
+                 </select>
             </div>
-            
-            <div className="flex flex-col items-end gap-1 border-l pl-2 flex-shrink-0">
-               <label className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 px-1 rounded" title="Required Field">
-                  <input 
-                    type="checkbox" 
-                    checked={field.required}
-                    onChange={(e) => onUpdate(field.id, { required: e.target.checked })}
-                    className="cursor-pointer accent-blue-600"
-                  />
-                  <span className="text-[10px] text-gray-500 font-medium">Req.</span>
-               </label>
-               <div className="flex gap-1 mt-1">
-                  <button onClick={() => onDuplicate(field.id)} className="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition-colors" title="Duplicate"><Icons.Copy /></button>
-                  <button onClick={() => onDelete(field.id)} className="p-1.5 hover:bg-red-50 rounded text-red-500 transition-colors" title="Delete"><Icons.Trash /></button>
+
+            {!isNameExpanded && (
+               <div 
+                 className={`text-xs font-semibold text-gray-700 bg-gray-50 border rounded px-2 py-1 h-8 w-full cursor-text hover:bg-white transition-colors flex items-center ${isDuplicate ? 'border-red-500 bg-red-50' : 'border-gray-300 hover:border-blue-400'}`}
+                 onClick={() => setIsNameExpanded(true)}
+                 title={field.name} 
+               >
+                 <span className="truncate w-full block">{field.name}</span>
                </div>
-            </div>
+            )}
+            {isNameExpanded && (
+               <div className="absolute top-8 left-0 w-full z-50 bg-white border border-blue-400 shadow-2xl rounded-md p-2 flex flex-col gap-2">
+                  <textarea autoFocus value={field.name} onChange={(e) => onUpdate(field.id, { name: e.target.value })} className="text-xs font-semibold text-gray-700 outline-none bg-gray-50 border border-gray-200 rounded px-2 py-2 resize-none h-24 w-full" />
+                  <button onClick={() => setIsNameExpanded(false)} className="self-end flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white text-[10px] font-bold px-3 py-1 rounded shadow-sm transition-colors"><Icons.Check /> DONE</button>
+               </div>
+            )}
           </div>
-
-          {/* Row 2: Text Styling */}
-          {field.type === 'text' && (
+          
+          {field.type !== 'checkbox' && (
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400 font-bold uppercase">Size</span>
+                  {/* FONT SIZE SELECTOR - RESTORED */}
                   <select 
                     value={field.fontSize} 
                     onChange={(e) => onUpdate(field.id, { fontSize: parseInt(e.target.value) })}
                     className="text-xs border border-gray-300 rounded p-1 bg-white focus:border-blue-500 outline-none"
                   >
-                    {FONT_SIZES.map(size => <option key={size} value={size}>{size}px</option>)}
+                    {FONT_SIZES.map(size => <option key={size} value={size}>{size === 0 ? "Auto" : `${size}px`}</option>)}
                   </select>
+                  
+                  {field.subtype !== 'dropdown' && (
+                      <label className="flex items-center gap-1 text-[10px] text-gray-500 cursor-pointer select-none">
+                          <input type="checkbox" checked={field.isMultiline !== false} onChange={(e) => onUpdate(field.id, { isMultiline: e.target.checked })} className="accent-blue-600" /> Multiline
+                      </label>
+                  )}
               </div>
-
-              <div className="flex bg-gray-100 rounded p-0.5 border border-gray-200">
-                {['left', 'center', 'right'].map(align => (
-                  <button 
-                    key={align}
-                    onClick={() => onUpdate(field.id, { align })}
-                    className={`p-1.5 rounded transition-all ${field.align === align ? 'bg-white shadow-sm text-blue-600' : 'text-gray-400 hover:text-gray-700'}`}
-                    title={`Align ${align}`}
-                  >
-                    {align === 'left' && <Icons.AlignLeft />}
-                    {align === 'center' && <Icons.AlignCenter />}
-                    {align === 'right' && <Icons.AlignRight />}
-                  </button>
-                ))}
+              <div className="flex items-center gap-2">
+                  {field.subtype !== 'dropdown' && (
+                       <div className="flex bg-gray-100 rounded p-0.5 border border-gray-200">
+                          {['left', 'center', 'right'].map(align => (
+                            <button key={align} onClick={() => onUpdate(field.id, { align })} className={`p-1.5 rounded transition-all ${field.align === align ? 'bg-white shadow-sm text-blue-600' : 'text-gray-400 hover:text-gray-700'}`}>
+                               {align === 'left' && <Icons.AlignLeft />} {align === 'center' && <Icons.AlignCenter />} {align === 'right' && <Icons.AlignRight />}
+                            </button>
+                          ))}
+                       </div>
+                  )}
+                  <div className="h-4 w-px bg-gray-300"></div>
+                  <button onClick={() => onDuplicateAction(field.id)} className="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition-colors" title="Duplicate"><Icons.Copy /></button>
+                  <button onClick={() => onDelete(field.id)} className="p-1.5 hover:bg-red-50 rounded text-red-500 transition-colors" title="Delete"><Icons.Trash /></button>
               </div>
             </div>
           )}
         </div>
       )}
 
-      {/* VISUAL FIELD BOX */}
-      <div 
-        className={`
-          w-full h-full flex items-center px-1 cursor-move overflow-hidden
-          transition-all duration-150 border-2
-          ${isSelected 
-             ? 'border-blue-500 bg-blue-100/50 shadow-md' 
-             : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50'}
-          ${field.type === 'checkbox' ? 'justify-center' : ''}
-        `}
-      >
-        {field.type === 'text' ? (
-          <span 
-            className="w-full text-blue-900 opacity-90 whitespace-nowrap overflow-hidden block"
-            style={{ 
-              fontSize: `${field.fontSize}px`, 
-              textAlign: field.align, 
-            }}
-          >
-            Sample Text
-          </span>
+      <div className={`w-full h-full flex items-center px-1 cursor-move overflow-hidden transition-all duration-150 border-2 ${isSelected ? 'border-blue-500 bg-blue-100/50 shadow-md' : (isDuplicate ? 'border-red-500 bg-red-50/50' : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50')} ${field.type === 'checkbox' ? 'justify-center' : ''}`}>
+        {field.subtype === 'dropdown' ? (
+             <div className="w-full h-full flex items-center justify-between px-2 bg-white border border-gray-300 rounded text-[10px] text-gray-600 font-mono select-none pointer-events-none"><span>Select...</span><span>▼</span></div>
+        ) : field.type === 'checkbox' ? (
+             <div className="w-5 h-5 border-2 border-blue-600 bg-white rounded flex items-center justify-center pointer-events-none">{isSelected && <div className="w-3 h-3 bg-blue-600 rounded-sm"></div>}</div>
         ) : (
-          <div className="w-5 h-5 border-2 border-blue-600 bg-white rounded flex items-center justify-center">
-            {isSelected && <div className="w-3 h-3 bg-blue-600 rounded-sm"></div>}
-          </div>
+            <span className="w-full text-blue-900 opacity-90 whitespace-pre-wrap overflow-hidden block pointer-events-none" style={{ fontSize: field.fontSize === 0 ? '12px' : `${field.fontSize}px`, textAlign: field.align, lineHeight: '1.2' }}>{field.name}</span>
         )}
       </div>
     </Rnd>
   );
 };
 
-// --- APPLICATION SHELL & ROUTING ---
-function App() {
-  return (
-    <BrowserRouter>
-      <FormForgeApp />
-    </BrowserRouter>
-  );
-}
+function App() { return <BrowserRouter><FormForgeApp /></BrowserRouter>; }
 
-// --- MAIN LOGIC ---
 function FormForgeApp() {
   const [fileUrl, setFileUrl] = useState(null);
   const [serverFilename, setServerFilename] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [fields, setFields] = useState([]);
-  
-  // Supports multiple IDs
   const [selectedFieldIds, setSelectedFieldIds] = useState([]); 
-  
   const [addingMode, setAddingMode] = useState(null); 
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  
   const pageRefs = useRef({});
   const fileInputRef = useRef(null); 
   const navigate = useNavigate();
 
-  // --- STATE RESTORE ---
+  const nameCounts = fields.reduce((acc, field) => { acc[field.name] = (acc[field.name] || 0) + 1; return acc; }, {});
+
   useEffect(() => {
     const loadState = async () => {
       const savedFilename = localStorage.getItem('server_filename');
@@ -237,53 +174,26 @@ function FormForgeApp() {
     if (serverFilename) localStorage.setItem('server_filename', serverFilename);
   }, [fields, serverFilename]);
 
-  // --- UPLOAD HANDLER ---
   const handleFileUpload = async (e) => {
     const selectedFile = e.target.files ? e.target.files[0] : e.dataTransfer.files[0];
     if (!selectedFile) return;
-
     setIsProcessing(true);
     const formData = new FormData();
     formData.append('pdf', selectedFile);
-
     try {
-      const res = await axios.post('http://localhost:5000/upload', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' }
-      });
-
+      const res = await axios.post('http://localhost:5000/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
       setServerFilename(res.data.filename);
       setFileUrl(`http://localhost:5000/files/${res.data.filename}`);
-      
-      const importedFields = (res.data.fields || []).map(f => ({
-          ...f,
-          align: 'center' 
-      }));
-      
+      const importedFields = (res.data.fields || []).map(f => ({ ...f, align: f.align || 'center', fontSize: f.fontSize !== undefined ? f.fontSize : 0, isMultiline: f.isMultiline !== undefined ? f.isMultiline : true }));
       setFields(importedFields); 
       localStorage.removeItem('pdf_fields');
-      
       navigate('/editor');
-    } catch (error) {
-      console.error("Upload failed", error);
-      alert("Error uploading file. Is the backend running?");
-    } finally {
-      setIsProcessing(false);
-    }
+    } catch (error) { console.error("Upload failed", error); alert("Error uploading file."); } finally { setIsProcessing(false); }
   };
 
-  const handleReset = () => {
-    if(window.confirm("Clear all?")) {
-      localStorage.removeItem('pdf_fields');
-      localStorage.removeItem('server_filename');
-      setFileUrl(null);
-      setFields([]);
-      navigate('/');
-    }
-  };
-
+  const handleReset = () => { if(window.confirm("Clear all?")) { localStorage.removeItem('pdf_fields'); localStorage.removeItem('server_filename'); setFileUrl(null); setFields([]); navigate('/'); } };
   const onDocumentLoadSuccess = ({ numPages }) => setNumPages(numPages);
 
-  // --- MOUSE EVENTS ---
   const handleCanvasClick = (e, pageIndex) => {
     if (addingMode) {
         const rect = e.currentTarget.getBoundingClientRect();
@@ -292,99 +202,31 @@ function FormForgeApp() {
         const id = genId();
         const w = addingMode === 'text' ? 160 : 30;
         const h = 30;
-        
-        setFields([...fields, {
-            id, type: addingMode, page: pageIndex, 
-            x: x - (w / 2), y: y - (h / 2), w, h,
-            name: `field_${id.slice(0, 5)}`, 
-            required: false, 
-            fontSize: 11, 
-            align: 'center' 
-        }]);
+        setFields([...fields, { id, type: addingMode, page: pageIndex, x: x - (w/2), y: y - (h/2), w, h, name: `field_${id.slice(0, 5)}`, required: false, fontSize: 0, align: 'center', isMultiline: true }]);
         setAddingMode(null);
         setSelectedFieldIds([id]);
         return;
     }
-    
-    // DESELECT ALL if clicking empty space
     setSelectedFieldIds([]);
   };
 
   const handleFieldSelect = (id, e) => {
-    if (e.ctrlKey || e.metaKey) {
-        setSelectedFieldIds(prev => {
-            if (prev.includes(id)) {
-                return prev.filter(fid => fid !== id);
-            } else {
-                return [...prev, id];
-            }
-        });
-    } else {
-        setSelectedFieldIds([id]);
-    }
+    if (e.ctrlKey || e.metaKey) setSelectedFieldIds(prev => prev.includes(id) ? prev.filter(fid => fid !== id) : [...prev, id]);
+    else setSelectedFieldIds([id]);
   };
 
-  const updateField = (id, newProps) => {
-    setFields(prevFields => prevFields.map(f => f.id === id ? { ...f, ...newProps } : f));
-  };
-
-  // Bulk Delete Function
-  const deleteSelected = () => {
-    if (selectedFieldIds.length === 0) return;
-    if(window.confirm(`Delete ${selectedFieldIds.length} items?`)) {
-        setFields(prev => prev.filter(f => !selectedFieldIds.includes(f.id)));
-        setSelectedFieldIds([]);
-    }
-  };
-
-  const deleteField = (id) => {
-    setFields(prev => prev.filter(f => f.id !== id));
-    setSelectedFieldIds(prev => prev.filter(fid => fid !== id));
-  };
-
-  const duplicateField = (id) => {
-    const field = fields.find(f => f.id === id);
-    if (!field) return;
-    const newId = genId();
-    setFields([...fields, {
-        ...field,
-        id: newId,
-        x: field.x + 20,
-        y: field.y + 20,
-        name: `${field.name}_copy`,
-        align: field.align || 'center'
-    }]);
-    setSelectedFieldIds([newId]);
-  };
-
-  const handleDragStop = (e, d, fieldId) => {
-    const boxRect = d.node.getBoundingClientRect();
-    const boxCenterY = boxRect.top + (boxRect.height / 2);
-    for (let i = 0; i < numPages; i++) {
-      const pageEl = pageRefs.current[i];
-      if (pageEl) {
-        const pageRect = pageEl.getBoundingClientRect();
-        if (boxCenterY >= pageRect.top && boxCenterY <= pageRect.bottom) {
-          updateField(fieldId, { 
-             page: i, 
-             x: boxRect.left - pageRect.left, 
-             y: boxRect.top - pageRect.top 
-          });
-          break;
-        }
-      }
-    }
-  };
+  const updateField = (id, newProps) => setFields(prev => prev.map(f => f.id === id ? { ...f, ...newProps } : f));
+  
+  const deleteSelected = () => { if(window.confirm(`Delete ${selectedFieldIds.length} items?`)) { setFields(prev => prev.filter(f => !selectedFieldIds.includes(f.id))); setSelectedFieldIds([]); } };
+  const deleteField = (id) => { setFields(prev => prev.filter(f => f.id !== id)); setSelectedFieldIds(prev => prev.filter(fid => fid !== id)); };
+  const duplicateField = (id) => { const field = fields.find(f => f.id === id); if (!field) return; const newId = genId(); setFields([...fields, { ...field, id: newId, x: field.x + 20, y: field.y + 20, name: `${field.name}_copy`, align: field.align || 'center' }]); setSelectedFieldIds([newId]); };
+  const handleDragStop = (e, d, fieldId) => { const boxRect = d.node.getBoundingClientRect(); const boxCenterY = boxRect.top + (boxRect.height / 2); for (let i = 0; i < numPages; i++) { const pageEl = pageRefs.current[i]; if (pageEl) { const pageRect = pageEl.getBoundingClientRect(); if (boxCenterY >= pageRect.top && boxCenterY <= pageRect.bottom) { updateField(fieldId, { page: i, x: boxRect.left - pageRect.left, y: boxRect.top - pageRect.top }); break; } } } };
 
   const handleSave = async () => {
     if (!serverFilename) return;
+    setIsSaving(true);
     try {
-      const payload = { filename: serverFilename, fields: fields };
-      const res = await axios.post('http://localhost:5000/process-pdf', payload, {
-        responseType: 'blob',
-        headers: { 'Content-Type': 'application/json' }
-      });
-
+      const res = await axios.post('http://localhost:5000/process-pdf', { filename: serverFilename, fields }, { responseType: 'blob' });
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
@@ -392,10 +234,7 @@ function FormForgeApp() {
       document.body.appendChild(link);
       link.click();
       link.remove();
-    } catch (err) {
-      console.error("Save failed:", err);
-      alert("Failed to save PDF. Check server console.");
-    }
+    } catch (err) { console.error("Save failed:", err); alert("Failed to save PDF."); } finally { setIsSaving(false); }
   };
 
   if (isLoading) return <div className="flex h-screen items-center justify-center text-blue-600">Restoring...</div>;
@@ -405,7 +244,6 @@ function FormForgeApp() {
     <div className={`bg-slate-50 min-h-screen font-sans ${addingMode ? 'cursor-crosshair' : ''}`}>
       <style>{`.react-pdf__Page { margin: 0 !important; } .react-pdf__Page__canvas { display: block !important; }`}</style>
       
-      {/* NAVBAR */}
       <nav className="fixed top-0 left-0 w-full h-16 bg-white border-b border-gray-200 shadow-sm z-50 flex items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">A</div>
@@ -417,34 +255,20 @@ function FormForgeApp() {
              <button onClick={() => setAddingMode(addingMode === 'checkbox' ? null : 'checkbox')} className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${addingMode === 'checkbox' ? 'bg-green-600 text-white shadow-md' : 'bg-gray-100 text-gray-700'}`}><span>☑</span> Checkbox</button>
              <div className="h-6 w-px bg-gray-300 mx-2"></div>
              <button onClick={handleReset} className="p-2 text-gray-400 hover:text-red-500"><Icons.Reset /></button>
-             <button onClick={handleSave} className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 text-white px-6 py-2 rounded-lg text-sm font-bold shadow-lg">Download</button>
+             <button onClick={handleSave} disabled={isSaving} className={`bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-lg text-sm font-bold shadow-lg transition-all ${isSaving ? 'opacity-75 cursor-wait' : 'hover:from-blue-700'}`}>{isSaving ? "Processing..." : "Download"}</button>
           </div>
         )}
       </nav>
 
-      {/* --- MULTI-SELECT FLOATING BAR (NEW) --- */}
       {selectedFieldIds.length > 1 && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white shadow-2xl border border-gray-200 rounded-full px-6 py-3 flex items-center gap-4 z-[100] animate-in fade-in slide-in-from-bottom-4">
-            <div className="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full text-xs">
-                {selectedFieldIds.length} Selected
-            </div>
+            <div className="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full text-xs">{selectedFieldIds.length} Selected</div>
             <div className="h-4 w-px bg-gray-300"></div>
-            <button 
-                onClick={deleteSelected}
-                className="flex items-center gap-2 text-red-600 hover:text-red-700 font-bold text-sm transition-colors"
-            >
-                <Icons.Trash /> Delete All
-            </button>
-            <button 
-                onClick={() => setSelectedFieldIds([])}
-                className="text-gray-400 hover:text-gray-600 text-xl font-light ml-2 leading-none"
-            >
-                &times;
-            </button>
+            <button onClick={deleteSelected} className="flex items-center gap-2 text-red-600 hover:text-red-700 font-bold text-sm transition-colors"><Icons.Trash /> Delete All</button>
+            <button onClick={() => setSelectedFieldIds([])} className="text-gray-400 hover:text-gray-600 text-xl font-light ml-2 leading-none">&times;</button>
         </div>
       )}
 
-      {/* ROUTES */}
       <div className="pt-20 pb-10 min-h-screen flex flex-col items-center select-none">
         <Routes>
           <Route path="/" element={
@@ -472,26 +296,16 @@ function FormForgeApp() {
               <div className="w-full flex justify-center p-4">
                 <Document file={fileUrl} onLoadSuccess={onDocumentLoadSuccess} className="flex flex-col gap-8">
                     {Array.from(new Array(numPages), (_, i) => (
-                      <div 
-                        key={i} 
-                        className="relative bg-white shadow-xl transition-shadow group" 
-                        style={{ width: '800px' }} 
-                        ref={el => pageRefs.current[i] = el}
-                        onClick={(e) => handleCanvasClick(e, i)}
-                      >
+                      <div key={i} className="relative bg-white shadow-xl transition-shadow group" style={{ width: '800px' }} ref={el => pageRefs.current[i] = el} onClick={(e) => handleCanvasClick(e, i)}>
                         <Page pageNumber={i + 1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
-                        
                         {fields.filter(f => f.page === i).map(field => (
                           <DraggableField 
-                            key={field.id} 
-                            field={field} 
-                            isSelected={selectedFieldIds.includes(field.id)}
-                            isMultiSelect={selectedFieldIds.length > 1} // Logic Check
-                            onSelect={handleFieldSelect} 
-                            onUpdate={updateField} 
-                            onDelete={deleteField} 
-                            onDuplicate={duplicateField} 
-                            onDragStopRaw={handleDragStop}
+                            key={field.id} field={field} 
+                            isSelected={selectedFieldIds.includes(field.id)} 
+                            isMultiSelect={selectedFieldIds.length > 1} 
+                            selectedCount={selectedFieldIds.length} 
+                            isDuplicate={nameCounts[field.name] > 1} 
+                            onSelect={handleFieldSelect} onUpdate={updateField} onDelete={deleteField} onDuplicateAction={duplicateField} onDragStopRaw={handleDragStop} 
                           />
                         ))}
                       </div>
