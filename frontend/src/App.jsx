@@ -10,6 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.vers
 
 const genId = () => crypto.randomUUID ? crypto.randomUUID() : `id_${Math.random().toString(36).substr(2, 9)}`;
 
+// Icons
 const Icons = {
   Trash: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>,
   Copy: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>,
@@ -26,7 +27,7 @@ const FONT_SIZES = [0, ...Array.from({ length: 20 }, (_, i) => i + 6)];
 const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDuplicate, onSelect, onUpdate, onDelete, onDuplicateAction, onDragStopRaw }) => {
   const [isNameExpanded, setIsNameExpanded] = useState(false);
   const isRightSide = field.x > 400;
-  const isTopSide = field.y < 110;
+  const isTopSide = field.y < 150;
 
   return (
     <Rnd
@@ -50,6 +51,7 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
           }}
           onMouseDown={(e) => e.stopPropagation()} 
         >
+          {/* Row 1: Name & Type */}
           <div className="flex flex-col gap-2 border-b border-gray-100 pb-2">
             <div className="flex justify-between items-center">
                  <label className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Field Name</label>
@@ -69,6 +71,7 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
                  </select>
             </div>
 
+            {/* Name Input */}
             {!isNameExpanded && (
                <div 
                  className={`text-xs font-semibold text-gray-700 bg-gray-50 border rounded px-2 py-1 h-8 w-full cursor-text hover:bg-white transition-colors flex items-center ${isDuplicate ? 'border-red-500 bg-red-50' : 'border-gray-300 hover:border-blue-400'}`}
@@ -84,20 +87,34 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
                   <button onClick={() => setIsNameExpanded(false)} className="self-end flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white text-[10px] font-bold px-3 py-1 rounded shadow-sm transition-colors"><Icons.Check /> DONE</button>
                </div>
             )}
+            
+            {/* Flags Row: Required + Critical */}
+            <div className="flex items-center gap-3">
+               <label className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 px-1 rounded">
+                  <input type="checkbox" checked={field.required} onChange={(e) => onUpdate(field.id, { required: e.target.checked })} className="accent-blue-600" />
+                  <span className="text-[10px] text-gray-500 font-medium">Required</span>
+               </label>
+
+               <label className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 px-1 rounded">
+                  <input type="checkbox" checked={field.isCritical} onChange={(e) => onUpdate(field.id, { isCritical: e.target.checked })} className="accent-red-600" />
+                  <span className="text-[10px] text-red-500 font-bold">Critical</span>
+               </label>
+            </div>
+
+            {/* Actions Row */}
+            <div className="flex justify-end gap-2 mt-1">
+                <button onClick={() => onDuplicateAction(field.id)} className="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition-colors" title="Duplicate"><Icons.Copy /></button>
+                <button onClick={() => onDelete(field.id)} className="p-1.5 hover:bg-red-50 rounded text-red-500 transition-colors" title="Delete"><Icons.Trash /></button>
+            </div>
           </div>
           
+          {/* Row 2: Styling */}
           {field.type !== 'checkbox' && (
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                  {/* FONT SIZE SELECTOR - RESTORED */}
-                  <select 
-                    value={field.fontSize} 
-                    onChange={(e) => onUpdate(field.id, { fontSize: parseInt(e.target.value) })}
-                    className="text-xs border border-gray-300 rounded p-1 bg-white focus:border-blue-500 outline-none"
-                  >
+                  <select value={field.fontSize} onChange={(e) => onUpdate(field.id, { fontSize: parseInt(e.target.value) })} className="text-xs border border-gray-300 rounded p-1 bg-white focus:border-blue-500 outline-none">
                     {FONT_SIZES.map(size => <option key={size} value={size}>{size === 0 ? "Auto" : `${size}px`}</option>)}
                   </select>
-                  
                   {field.subtype !== 'dropdown' && (
                       <label className="flex items-center gap-1 text-[10px] text-gray-500 cursor-pointer select-none">
                           <input type="checkbox" checked={field.isMultiline !== false} onChange={(e) => onUpdate(field.id, { isMultiline: e.target.checked })} className="accent-blue-600" /> Multiline
@@ -114,22 +131,25 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
                           ))}
                        </div>
                   )}
-                  <div className="h-4 w-px bg-gray-300"></div>
-                  <button onClick={() => onDuplicateAction(field.id)} className="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition-colors" title="Duplicate"><Icons.Copy /></button>
-                  <button onClick={() => onDelete(field.id)} className="p-1.5 hover:bg-red-50 rounded text-red-500 transition-colors" title="Delete"><Icons.Trash /></button>
               </div>
             </div>
           )}
         </div>
       )}
 
-      <div className={`w-full h-full flex items-center px-1 cursor-move overflow-hidden transition-all duration-150 border-2 ${isSelected ? 'border-blue-500 bg-blue-100/50 shadow-md' : (isDuplicate ? 'border-red-500 bg-red-50/50' : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50')} ${field.type === 'checkbox' ? 'justify-center' : ''}`}>
+      {/* VISUAL BOX */}
+      <div className={`w-full h-full flex items-center px-1 cursor-move overflow-hidden transition-all duration-150 border-2 ${isSelected ? 'border-blue-500 bg-blue-100/50 shadow-md' : (isDuplicate ? 'border-red-500 bg-red-50/50' : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50')} ${field.type === 'checkbox' ? 'justify-center' : ''} ${field.isCritical ? 'ring-2 ring-red-400' : ''}`}>
         {field.subtype === 'dropdown' ? (
-             <div className="w-full h-full flex items-center justify-between px-2 bg-white border border-gray-300 rounded text-[10px] text-gray-600 font-mono select-none pointer-events-none"><span>Select...</span><span>▼</span></div>
+             <div className="w-full h-full flex items-center justify-between px-2 bg-white border border-gray-300 rounded text-[10px] text-gray-600 font-mono select-none pointer-events-none"><span>Yes/No</span><span>▼</span></div>
         ) : field.type === 'checkbox' ? (
              <div className="w-5 h-5 border-2 border-blue-600 bg-white rounded flex items-center justify-center pointer-events-none">{isSelected && <div className="w-3 h-3 bg-blue-600 rounded-sm"></div>}</div>
         ) : (
             <span className="w-full text-blue-900 opacity-90 whitespace-pre-wrap overflow-hidden block pointer-events-none" style={{ fontSize: field.fontSize === 0 ? '12px' : `${field.fontSize}px`, textAlign: field.align, lineHeight: '1.2' }}>{field.name}</span>
+        )}
+        
+        {/* Critical Badge */}
+        {field.isCritical && (
+            <div className="absolute -top-2 -right-2 bg-red-600 text-white text-[8px] font-bold px-1 rounded shadow-sm">CRITICAL</div>
         )}
       </div>
     </Rnd>
@@ -180,11 +200,19 @@ function FormForgeApp() {
     setIsProcessing(true);
     const formData = new FormData();
     formData.append('pdf', selectedFile);
+
     try {
       const res = await axios.post('http://localhost:5000/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
       setServerFilename(res.data.filename);
       setFileUrl(`http://localhost:5000/files/${res.data.filename}`);
-      const importedFields = (res.data.fields || []).map(f => ({ ...f, align: f.align || 'center', fontSize: f.fontSize !== undefined ? f.fontSize : 0, isMultiline: f.isMultiline !== undefined ? f.isMultiline : true }));
+      
+      const importedFields = (res.data.fields || []).map(f => ({
+          ...f,
+          align: f.align || 'center',
+          fontSize: f.fontSize !== undefined ? f.fontSize : 0, 
+          isMultiline: f.isMultiline !== undefined ? f.isMultiline : true,
+          isCritical: !!f.isCritical // Ensure bool
+      }));
       setFields(importedFields); 
       localStorage.removeItem('pdf_fields');
       navigate('/editor');
@@ -202,7 +230,7 @@ function FormForgeApp() {
         const id = genId();
         const w = addingMode === 'text' ? 160 : 30;
         const h = 30;
-        setFields([...fields, { id, type: addingMode, page: pageIndex, x: x - (w/2), y: y - (h/2), w, h, name: `field_${id.slice(0, 5)}`, required: false, fontSize: 0, align: 'center', isMultiline: true }]);
+        setFields([...fields, { id, type: addingMode, page: pageIndex, x: x - (w/2), y: y - (h/2), w, h, name: `field_${id.slice(0, 5)}`, required: false, fontSize: 0, align: 'center', isMultiline: true, isCritical: false }]);
         setAddingMode(null);
         setSelectedFieldIds([id]);
         return;
@@ -216,10 +244,9 @@ function FormForgeApp() {
   };
 
   const updateField = (id, newProps) => setFields(prev => prev.map(f => f.id === id ? { ...f, ...newProps } : f));
-  
   const deleteSelected = () => { if(window.confirm(`Delete ${selectedFieldIds.length} items?`)) { setFields(prev => prev.filter(f => !selectedFieldIds.includes(f.id))); setSelectedFieldIds([]); } };
   const deleteField = (id) => { setFields(prev => prev.filter(f => f.id !== id)); setSelectedFieldIds(prev => prev.filter(fid => fid !== id)); };
-  const duplicateField = (id) => { const field = fields.find(f => f.id === id); if (!field) return; const newId = genId(); setFields([...fields, { ...field, id: newId, x: field.x + 20, y: field.y + 20, name: `${field.name}_copy`, align: field.align || 'center' }]); setSelectedFieldIds([newId]); };
+  const duplicateField = (id) => { const f = fields.find(f => f.id === id); if (!f) return; const newId = genId(); setFields([...fields, { ...f, id: newId, x: f.x + 20, y: f.y + 20, name: `${f.name}_copy` }]); setSelectedFieldIds([newId]); };
   const handleDragStop = (e, d, fieldId) => { const boxRect = d.node.getBoundingClientRect(); const boxCenterY = boxRect.top + (boxRect.height / 2); for (let i = 0; i < numPages; i++) { const pageEl = pageRefs.current[i]; if (pageEl) { const pageRect = pageEl.getBoundingClientRect(); if (boxCenterY >= pageRect.top && boxCenterY <= pageRect.bottom) { updateField(fieldId, { page: i, x: boxRect.left - pageRect.left, y: boxRect.top - pageRect.top }); break; } } } };
 
   const handleSave = async () => {
