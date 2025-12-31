@@ -108,7 +108,7 @@ const extractExistingFields = async (filePath) => {
                         name: field.getName().replace('_CRITICAL', ''), // Clean name for display
                         required: field.isRequired(),
                         isCritical: isCritical,
-                        fontSize: 0, // Assume auto for re-loaded fields
+                        fontSize: 11, // Assume auto for re-loaded fields
                         align: 'center', // Default align
                         isMultiline: (type === 'text' && field.isMultiline) ? field.isMultiline() : false
                     });

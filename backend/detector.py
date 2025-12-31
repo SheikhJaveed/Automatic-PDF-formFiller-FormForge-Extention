@@ -183,7 +183,7 @@ def main():
                         "w": fe_w - 4,
                         "h": fe_h - 4,
                         "name": display_name,
-                        "required": False, "fontSize": 0, "align": "center" if is_table_cell else "left",
+                        "required": False, "fontSize": 11, "align": "center" if is_table_cell else "left",
                         "isMultiline": is_tall
                     })
         print(json.dumps(detected_fields))

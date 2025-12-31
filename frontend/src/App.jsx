@@ -3,14 +3,20 @@ import { BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-do
 import { Document, Page, pdfjs } from 'react-pdf';
 import { Rnd } from 'react-rnd';
 import axios from 'axios';
-import { get, set, del } from 'idb-keyval'; 
 import "./App.css"; 
 
+// Initialize PDF Worker
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-const genId = () => crypto.randomUUID ? crypto.randomUUID() : `id_${Math.random().toString(36).substr(2, 9)}`;
+// --- HELPER FUNCTIONS ---
+const genId = () => {
+  if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+    return crypto.randomUUID();
+  }
+  return `id_${Math.random().toString(36).substr(2, 9)}`;
+};
 
-// Icons
+// --- ICONS ---
 const Icons = {
   Trash: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>,
   Copy: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>,
@@ -19,12 +25,13 @@ const Icons = {
   AlignLeft: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>,
   AlignCenter: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line></svg>,
   AlignRight: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg>,
-  Check: () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  Check: () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>,
+  Replace: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
 };
 
 const FONT_SIZES = [0, ...Array.from({ length: 20 }, (_, i) => i + 6)];
 
-const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDuplicate, onSelect, onUpdate, onDelete, onDuplicateAction, onDragStopRaw }) => {
+const DraggableField = ({ field, isSelected, isMultiSelect, isDuplicate, onSelect, onUpdate, onDelete, onDuplicateAction, onDragStopRaw, onResizeStopRaw }) => {
   const [isNameExpanded, setIsNameExpanded] = useState(false);
   const isRightSide = field.x > 400;
   const isTopSide = field.y < 150;
@@ -35,7 +42,7 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
       position={{ x: field.x, y: field.y }}
       onDragStop={(e, d) => onDragStopRaw(e, d, field.id)}
       onResizeStop={(e, direction, ref, delta, position) => {
-        onUpdate(field.id, { w: parseInt(ref.style.width), h: parseInt(ref.style.height), ...position });
+        onResizeStopRaw(e, direction, ref, delta, position, field);
       }}
       onClick={(e) => { e.stopPropagation(); onSelect(field.id, e); }}
       className={`group m-0 p-0 ${isSelected ? 'z-50' : 'z-10'}`} 
@@ -51,7 +58,6 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
           }}
           onMouseDown={(e) => e.stopPropagation()} 
         >
-          {/* Row 1: Name & Type */}
           <div className="flex flex-col gap-2 border-b border-gray-100 pb-2">
             <div className="flex justify-between items-center">
                  <label className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Field Name</label>
@@ -71,7 +77,6 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
                  </select>
             </div>
 
-            {/* Name Input */}
             {!isNameExpanded && (
                <div 
                  className={`text-xs font-semibold text-gray-700 bg-gray-50 border rounded px-2 py-1 h-8 w-full cursor-text hover:bg-white transition-colors flex items-center ${isDuplicate ? 'border-red-500 bg-red-50' : 'border-gray-300 hover:border-blue-400'}`}
@@ -88,27 +93,23 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
                </div>
             )}
             
-            {/* Flags Row: Required + Critical */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 flex-wrap">
                <label className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 px-1 rounded">
                   <input type="checkbox" checked={field.required} onChange={(e) => onUpdate(field.id, { required: e.target.checked })} className="accent-blue-600" />
-                  <span className="text-[10px] text-gray-500 font-medium">Required</span>
+                  <span className="text-[10px] text-gray-500 font-medium">Req.</span>
                </label>
-
                <label className="flex items-center gap-1 cursor-pointer hover:bg-gray-50 px-1 rounded">
                   <input type="checkbox" checked={field.isCritical} onChange={(e) => onUpdate(field.id, { isCritical: e.target.checked })} className="accent-red-600" />
                   <span className="text-[10px] text-red-500 font-bold">Critical</span>
                </label>
             </div>
 
-            {/* Actions Row */}
             <div className="flex justify-end gap-2 mt-1">
                 <button onClick={() => onDuplicateAction(field.id)} className="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition-colors" title="Duplicate"><Icons.Copy /></button>
                 <button onClick={() => onDelete(field.id)} className="p-1.5 hover:bg-red-50 rounded text-red-500 transition-colors" title="Delete"><Icons.Trash /></button>
             </div>
           </div>
           
-          {/* Row 2: Styling */}
           {field.type !== 'checkbox' && (
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -137,7 +138,6 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
         </div>
       )}
 
-      {/* VISUAL BOX */}
       <div className={`w-full h-full flex items-center px-1 cursor-move overflow-hidden transition-all duration-150 border-2 ${isSelected ? 'border-blue-500 bg-blue-100/50 shadow-md' : (isDuplicate ? 'border-red-500 bg-red-50/50' : 'border-blue-300 border-solid bg-blue-50/30 hover:bg-blue-50/50')} ${field.type === 'checkbox' ? 'justify-center' : ''} ${field.isCritical ? 'ring-2 ring-red-400' : ''}`}>
         {field.subtype === 'dropdown' ? (
              <div className="w-full h-full flex items-center justify-between px-2 bg-white border border-gray-300 rounded text-[10px] text-gray-600 font-mono select-none pointer-events-none"><span>Yes/No</span><span>▼</span></div>
@@ -145,11 +145,6 @@ const DraggableField = ({ field, isSelected, isMultiSelect, selectedCount, isDup
              <div className="w-5 h-5 border-2 border-blue-600 bg-white rounded flex items-center justify-center pointer-events-none">{isSelected && <div className="w-3 h-3 bg-blue-600 rounded-sm"></div>}</div>
         ) : (
             <span className="w-full text-blue-900 opacity-90 whitespace-pre-wrap overflow-hidden block pointer-events-none" style={{ fontSize: field.fontSize === 0 ? '12px' : `${field.fontSize}px`, textAlign: field.align, lineHeight: '1.2' }}>{field.name}</span>
-        )}
-        
-        {/* Critical Badge */}
-        {field.isCritical && (
-            <div className="absolute -top-2 -right-2 bg-red-600 text-white text-[8px] font-bold px-1 rounded shadow-sm">CRITICAL</div>
         )}
       </div>
     </Rnd>
@@ -163,17 +158,58 @@ function FormForgeApp() {
   const [serverFilename, setServerFilename] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [fields, setFields] = useState([]);
+  
+  const [currentPage, setCurrentPage] = useState(1);
+
   const [selectedFieldIds, setSelectedFieldIds] = useState([]); 
   const [addingMode, setAddingMode] = useState(null); 
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  
   const pageRefs = useRef({});
   const fileInputRef = useRef(null); 
+  const updateInputRef = useRef(null); 
   const navigate = useNavigate();
 
   const nameCounts = fields.reduce((acc, field) => { acc[field.name] = (acc[field.name] || 0) + 1; return acc; }, {});
 
+  // --- ROBUST PAGE NUMBER TRACKER ---
+  useEffect(() => {
+    if (!numPages) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Only look at entries currently visible
+        const visibleEntries = entries.filter(entry => entry.isIntersecting);
+
+        if (visibleEntries.length > 0) {
+          // Sort by how much of the page is visible. The one with max ratio is "current".
+          const mostVisible = visibleEntries.reduce((prev, current) => 
+            (prev.intersectionRatio > current.intersectionRatio) ? prev : current
+          );
+
+          const pageIndex = parseInt(mostVisible.target.getAttribute('data-page-index'));
+          if (!isNaN(pageIndex)) {
+            setCurrentPage(pageIndex + 1);
+          }
+        }
+      },
+      {
+        root: null,
+        // Threshold array ensures it fires frequently as you scroll through the page
+        threshold: [0.1, 0.5, 0.9] 
+      }
+    );
+
+    Object.values(pageRefs.current).forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [numPages]);
+
+  // State Restore
   useEffect(() => {
     const loadState = async () => {
       const savedFilename = localStorage.getItem('server_filename');
@@ -200,23 +236,39 @@ function FormForgeApp() {
     setIsProcessing(true);
     const formData = new FormData();
     formData.append('pdf', selectedFile);
-
     try {
       const res = await axios.post('http://localhost:5000/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
       setServerFilename(res.data.filename);
       setFileUrl(`http://localhost:5000/files/${res.data.filename}`);
-      
       const importedFields = (res.data.fields || []).map(f => ({
           ...f,
           align: f.align || 'center',
-          fontSize: f.fontSize !== undefined ? f.fontSize : 0, 
+          fontSize: f.fontSize !== undefined ? f.fontSize : 11, // DEFAULT SIZE 11
           isMultiline: f.isMultiline !== undefined ? f.isMultiline : true,
-          isCritical: !!f.isCritical // Ensure bool
+          isCritical: !!f.isCritical
       }));
       setFields(importedFields); 
       localStorage.removeItem('pdf_fields');
       navigate('/editor');
     } catch (error) { console.error("Upload failed", error); alert("Error uploading file."); } finally { setIsProcessing(false); }
+  };
+
+  const handleUpdateBackground = async (e) => {
+    const selectedFile = e.target.files[0];
+    if (!selectedFile) return;
+    setIsProcessing(true);
+    const formData = new FormData();
+    formData.append('pdf', selectedFile);
+    try {
+        const res = await axios.post('http://localhost:5000/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+        setServerFilename(res.data.filename);
+        setFileUrl(`http://localhost:5000/files/${res.data.filename}`);
+        alert("Background Updated! Drag your fields to align with the new table.");
+    } catch (error) {
+        alert("Failed to update PDF background.");
+    } finally {
+        setIsProcessing(false);
+    }
   };
 
   const handleReset = () => { if(window.confirm("Clear all?")) { localStorage.removeItem('pdf_fields'); localStorage.removeItem('server_filename'); setFileUrl(null); setFields([]); navigate('/'); } };
@@ -230,7 +282,7 @@ function FormForgeApp() {
         const id = genId();
         const w = addingMode === 'text' ? 160 : 30;
         const h = 30;
-        setFields([...fields, { id, type: addingMode, page: pageIndex, x: x - (w/2), y: y - (h/2), w, h, name: `field_${id.slice(0, 5)}`, required: false, fontSize: 0, align: 'center', isMultiline: true, isCritical: false }]);
+        setFields([...fields, { id, type: addingMode, page: pageIndex, x: x - (w/2), y: y - (h/2), w, h, name: `field_${id.slice(0, 5)}`, required: false, fontSize: 11, align: 'center', isMultiline: true, isCritical: false }]);
         setAddingMode(null);
         setSelectedFieldIds([id]);
         return;
@@ -246,8 +298,52 @@ function FormForgeApp() {
   const updateField = (id, newProps) => setFields(prev => prev.map(f => f.id === id ? { ...f, ...newProps } : f));
   const deleteSelected = () => { if(window.confirm(`Delete ${selectedFieldIds.length} items?`)) { setFields(prev => prev.filter(f => !selectedFieldIds.includes(f.id))); setSelectedFieldIds([]); } };
   const deleteField = (id) => { setFields(prev => prev.filter(f => f.id !== id)); setSelectedFieldIds(prev => prev.filter(fid => fid !== id)); };
-  const duplicateField = (id) => { const f = fields.find(f => f.id === id); if (!f) return; const newId = genId(); setFields([...fields, { ...f, id: newId, x: f.x + 20, y: f.y + 20, name: `${f.name}_copy` }]); setSelectedFieldIds([newId]); };
-  const handleDragStop = (e, d, fieldId) => { const boxRect = d.node.getBoundingClientRect(); const boxCenterY = boxRect.top + (boxRect.height / 2); for (let i = 0; i < numPages; i++) { const pageEl = pageRefs.current[i]; if (pageEl) { const pageRect = pageEl.getBoundingClientRect(); if (boxCenterY >= pageRect.top && boxCenterY <= pageRect.bottom) { updateField(fieldId, { page: i, x: boxRect.left - pageRect.left, y: boxRect.top - pageRect.top }); break; } } } };
+  const duplicateField = (id) => { const f = fields.find(f => f.id === id); if (!f) return; const newId = genId(); setFields([...fields, { ...f, id: newId, x: f.x + 20, y: f.y + 20, name: `${f.name}_copy`, align: f.align || 'center' }]); setSelectedFieldIds([newId]); };
+
+  // --- FIXED DRAG LOGIC (Prevent Snap Back) ---
+  const handleDragStop = (e, d, fieldId) => {
+    const boxRect = d.node.getBoundingClientRect();
+    const boxCenterY = boxRect.top + (boxRect.height / 2);
+    const boxCenterX = boxRect.left + (boxRect.width / 2);
+    let foundPage = -1;
+    let newX = 0;
+    let newY = 0;
+
+    for (let i = 0; i < numPages; i++) {
+        const pageEl = pageRefs.current[i];
+        if (pageEl) {
+            const pageRect = pageEl.getBoundingClientRect();
+            // Check intersection with page container
+            if (boxCenterY >= pageRect.top && boxCenterY <= pageRect.bottom && boxCenterX >= pageRect.left && boxCenterX <= pageRect.right) {
+                foundPage = i;
+                newX = boxRect.left - pageRect.left;
+                newY = boxRect.top - pageRect.top;
+                break;
+            }
+        }
+    }
+    
+    // If dropped on a valid page, update.
+    if (foundPage !== -1) {
+        updateField(fieldId, { page: foundPage, x: newX, y: newY });
+    } else {
+        // Fallback: If dropped "out of bounds", calculate relative to original page so it doesn't snap to 0,0
+        const field = fields.find(f => f.id === fieldId);
+        if(field) {
+             const originalPageEl = pageRefs.current[field.page];
+             if (originalPageEl) {
+                 const pageRect = originalPageEl.getBoundingClientRect();
+                 updateField(fieldId, { x: boxRect.left - pageRect.left, y: boxRect.top - pageRect.top });
+             }
+        }
+    }
+  };
+
+  const handleResizeStop = (e, direction, ref, delta, position, field) => {
+    const newW = parseInt(ref.style.width);
+    const newH = parseInt(ref.style.height);
+    updateField(field.id, { w: newW, h: newH, ...position });
+  };
 
   const handleSave = async () => {
     if (!serverFilename) return;
@@ -277,10 +373,16 @@ function FormForgeApp() {
             <span className="text-xl font-bold text-gray-800 tracking-tight">AutoFormForge</span>
         </Link>
         {fileUrl && (
-          <div className="flex items-center gap-3">
-             <button onClick={() => setAddingMode(addingMode === 'text' ? null : 'text')} className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${addingMode === 'text' ? 'bg-blue-600 text-white shadow-md' : 'bg-gray-100 text-gray-700'}`}><span className="text-lg font-serif">T</span> Text</button>
-             <button onClick={() => setAddingMode(addingMode === 'checkbox' ? null : 'checkbox')} className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${addingMode === 'checkbox' ? 'bg-green-600 text-white shadow-md' : 'bg-gray-100 text-gray-700'}`}><span>☑</span> Checkbox</button>
-             <div className="h-6 w-px bg-gray-300 mx-2"></div>
+          <div className="flex items-center gap-4">
+             {/* PAGE INDICATOR */}
+             <div className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full border border-gray-200 shadow-inner">
+                Page {currentPage} of {numPages || '--'}
+             </div>
+             <button onClick={() => setAddingMode(addingMode === 'text' ? null : 'text')} className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${addingMode === 'text' ? 'bg-blue-600 text-white shadow-md' : 'bg-gray-100 text-gray-700'}`}>T Text</button>
+             <button onClick={() => setAddingMode(addingMode === 'checkbox' ? null : 'checkbox')} className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${addingMode === 'checkbox' ? 'bg-green-600 text-white shadow-md' : 'bg-gray-100 text-gray-700'}`}>☑ Check</button>
+             <input type="file" ref={updateInputRef} onChange={handleUpdateBackground} accept="application/pdf" hidden />
+             <button onClick={() => updateInputRef.current.click()} className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold bg-yellow-500 hover:bg-yellow-600 text-white shadow-md transition-all" title="Upload new PDF version but KEEP existing fields"><Icons.Replace /> Update PDF</button>
+             <div className="h-6 w-px bg-gray-300"></div>
              <button onClick={handleReset} className="p-2 text-gray-400 hover:text-red-500"><Icons.Reset /></button>
              <button onClick={handleSave} disabled={isSaving} className={`bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-lg text-sm font-bold shadow-lg transition-all ${isSaving ? 'opacity-75 cursor-wait' : 'hover:from-blue-700'}`}>{isSaving ? "Processing..." : "Download"}</button>
           </div>
@@ -323,7 +425,14 @@ function FormForgeApp() {
               <div className="w-full flex justify-center p-4">
                 <Document file={fileUrl} onLoadSuccess={onDocumentLoadSuccess} className="flex flex-col gap-8">
                     {Array.from(new Array(numPages), (_, i) => (
-                      <div key={i} className="relative bg-white shadow-xl transition-shadow group" style={{ width: '800px' }} ref={el => pageRefs.current[i] = el} onClick={(e) => handleCanvasClick(e, i)}>
+                      <div 
+                        key={i} 
+                        className="relative bg-white shadow-xl transition-shadow group" 
+                        style={{ width: '800px' }} 
+                        ref={el => pageRefs.current[i] = el}
+                        data-page-index={i} 
+                        onClick={(e) => handleCanvasClick(e, i)}
+                      >
                         <Page pageNumber={i + 1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
                         {fields.filter(f => f.page === i).map(field => (
                           <DraggableField 
@@ -333,6 +442,7 @@ function FormForgeApp() {
                             selectedCount={selectedFieldIds.length} 
                             isDuplicate={nameCounts[field.name] > 1} 
                             onSelect={handleFieldSelect} onUpdate={updateField} onDelete={deleteField} onDuplicateAction={duplicateField} onDragStopRaw={handleDragStop} 
+                            onResizeStopRaw={handleResizeStop}
                           />
                         ))}
                       </div>
