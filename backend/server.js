@@ -38,7 +38,7 @@ const detectFieldsWithPython = (filePath) => {
     });
 };
 
-// --- HELPER: Extract EXISTING Fields (FIXED) ---
+// --- HELPER: Extract EXISTING Fields (Including Custom Critical Flag) ---
 const extractExistingFields = async (filePath) => {
     try {
         const pdfBytes = fs.readFileSync(filePath);
@@ -48,13 +48,9 @@ const extractExistingFields = async (filePath) => {
         
         if (fields.length === 0) return null;
 
-        console.log(`Found ${fields.length} raw PDF fields. Mapping to pages...`);
-
         const extractedData = [];
         const FRONTEND_WIDTH = 800;
         
-        // 1. BUILD PAGE REFERENCE MAP
-        // This is the fix. We map the internal PDF reference string to the Page Index.
         const pageRefMap = new Map();
         pdfDoc.getPages().forEach((p, i) => {
             pageRefMap.set(p.ref.toString(), i);
@@ -65,17 +61,28 @@ const extractExistingFields = async (filePath) => {
                 if (!field.acroField.getWidgets) return;
                 const widgets = field.acroField.getWidgets();
                 
+                // Deep Search for Critical Flag: Check Field first, then Widgets
+                let isCritical = false;
+                const fieldCritical = field.acroField.dict.get(PDFName.of('IsCritical'));
+                if (fieldCritical instanceof PDFBool) {
+                    isCritical = fieldCritical.asBoolean();
+                } else {
+                    // Check if any widget carries the flag
+                    for (const widget of widgets) {
+                        const widgetCritical = widget.dict.get(PDFName.of('IsCritical'));
+                        if (widgetCritical instanceof PDFBool && widgetCritical.asBoolean()) {
+                            isCritical = true;
+                            break;
+                        }
+                    }
+                }
+
                 widgets.forEach(widget => {
                     const rect = widget.getRectangle();
-                    
-                    // 2. LOOKUP PAGE INDEX SAFELY
                     const pRef = widget.P();
-                    const pageIndex = pageRefMap.get(pRef.toString());
+                    const pageIndex = pageRefMap.get(pRef ? pRef.toString() : '');
 
-                    if (pageIndex === undefined) {
-                        console.warn(`Orphan widget found for field: ${field.getName()}`);
-                        return; 
-                    }
+                    if (pageIndex === undefined) return; 
 
                     const page = pdfDoc.getPage(pageIndex);
                     const scaleFactor = FRONTEND_WIDTH / page.getSize().width;
@@ -92,9 +99,6 @@ const extractExistingFields = async (filePath) => {
                         options = field.getOptions();
                     }
 
-                    // Check if critical (custom logic would rely on naming conventions here)
-                    const isCritical = field.getName().includes("_CRITICAL"); 
-
                     extractedData.push({
                         id: field.getName(),
                         type: type,
@@ -105,11 +109,11 @@ const extractExistingFields = async (filePath) => {
                         y: (pageHeight - rect.y - rect.height) * scaleFactor,
                         w: rect.width * scaleFactor,
                         h: rect.height * scaleFactor,
-                        name: field.getName().replace('_CRITICAL', ''), // Clean name for display
+                        name: field.getName().replace(/_\d+$/, ''), 
                         required: field.isRequired(),
-                        isCritical: isCritical,
-                        fontSize: 11, // Assume auto for re-loaded fields
-                        align: 'center', // Default align
+                        isCritical: isCritical, 
+                        fontSize: 11,
+                        align: 'center',
                         isMultiline: (type === 'text' && field.isMultiline) ? field.isMultiline() : false
                     });
                 });
@@ -128,20 +132,10 @@ const extractExistingFields = async (filePath) => {
 
 app.post('/upload', upload.single('pdf'), async (req, res) => {
     if (!req.file) return res.status(400).json({ error: 'No file' });
-    
-    console.log(`Processing: ${req.file.filename}`);
-
-    // 1. Try Existing
     let detectedFields = await extractExistingFields(req.file.path);
-
-    // 2. If None, Run AI
     if (!detectedFields || detectedFields.length === 0) {
-        console.log("No existing fields found. Starting Python AI...");
         detectedFields = await detectFieldsWithPython(req.file.path);
-    } else {
-        console.log(`Successfully restored ${detectedFields.length} fields from PDF.`);
     }
-
     res.json({ filename: req.file.filename, fields: detectedFields });
 });
 
@@ -158,9 +152,11 @@ app.post('/process-pdf', async (req, res) => {
         const FRONTEND_WIDTH = 800;
 
         // Wipe old fields
-        form.getFields().map(f => f.getName()).forEach(name => { try { form.removeField(form.getField(name)); } catch(e){} });
+        form.getFields().map(f => f.getName()).forEach(name => { 
+            try { form.removeField(form.getField(name)); } catch(e){} 
+        });
 
-        fields.forEach((fieldData) => {
+        fields.forEach((fieldData, index) => {
             const pageIndex = fieldData.page || 0;
             if (pageIndex >= pdfDoc.getPageCount()) return;
             const page = pdfDoc.getPage(pageIndex);
@@ -172,57 +168,57 @@ app.post('/process-pdf', async (req, res) => {
             const scaledH = fieldData.h * scaleFactor;
             const pdfY = page.getSize().height - scaledY - scaledH;
 
-            let fieldName = fieldData.name || fieldData.id;
-            fieldName = fieldName.replace(/\./g, ' ').trim();
-            if (fieldData.isCritical) fieldName += "_CRITICAL"; // Save state in name
+            // Maintain unique naming with index
+            // Removes the automatic suffixing
+            let fieldName = (fieldData.name || fieldData.id).replace(/\./g, ' ').trim();
+            
+            let field;
 
-            // DROPDOWN
             if (fieldData.subtype === 'dropdown') {
-                try {
-                    const dropdown = form.createDropdown(fieldName);
-                    dropdown.setOptions(fieldData.options || ['Yes', 'No']);
-                    if (fieldData.required) dropdown.enableRequired();
-                    
-                    const da = `/Helv 10 Tf 0 g`;
-                    dropdown.acroField.dict.set(PDFName.of('DA'), PDFString.of(da));
-                    dropdown.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1), font: helveticaFont });
-                } catch(e){}
+                field = form.createDropdown(fieldName);
+                field.setOptions(fieldData.options || ['Yes', 'No']);
+                field.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1), font: helveticaFont });
             } 
-            // CHECKBOX
             else if (fieldData.type === 'checkbox') {
-                try {
-                    const checkBox = form.createCheckBox(fieldName);
-                    if (fieldData.required) checkBox.enableRequired();
-                    checkBox.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1) });
-                } catch(e){}
+                field = form.createCheckBox(fieldName);
+                field.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, borderWidth: 0, backgroundColor: rgb(1,1,1) });
             } 
-            // TEXT
             else {
-                try {
-                    const textField = form.createTextField(fieldName);
-                    textField.setText(''); 
+                field = form.createTextField(fieldName);
+                if (fieldData.isMultiline) field.enableMultiline();
 
-                    if (fieldData.isMultiline) textField.enableMultiline();
+                const fontSize = fieldData.fontSize || 11;
+                const finalSize = (fontSize === 0) ? 11 : (fontSize * scaleFactor);
+                
+                const daString = `/Helv ${finalSize} Tf 0 g`;
+                field.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
 
-                    // Font Size: 0 = Auto.
-                    const fontSize = fieldData.fontSize;
-                    const finalSize = (fontSize === 0 || fontSize === '0') ? 0 : (fontSize * scaleFactor);
-                    const daString = `/Helv ${finalSize} Tf 0 g`;
-                    textField.acroField.dict.set(PDFName.of('DA'), PDFString.of(daString));
+                if (fieldData.align === 'center') field.setAlignment(TextAlignment.Center);
+                else if (fieldData.align === 'right') field.setAlignment(TextAlignment.Right);
+                else field.setAlignment(TextAlignment.Left);
 
-                    if (fieldData.align === 'center') textField.setAlignment(TextAlignment.Center);
-                    else if (fieldData.align === 'right') textField.setAlignment(TextAlignment.Right);
-                    else textField.setAlignment(TextAlignment.Left);
-
-                    if (fieldData.required) textField.enableRequired();
-
-                    textField.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, font: helveticaFont, borderWidth: 0, backgroundColor: rgb(1,1,1) });
-                } catch(e){}
+                field.addToPage(page, { x: scaledX, y: pdfY, width: scaledW, height: scaledH, font: helveticaFont, borderWidth: 0, backgroundColor: rgb(1,1,1) });
             }
+
+            // --- DOUBLE TAGGING FOR RELIABILITY ---
+            const isCriticalBool = fieldData.isCritical ? PDFBool.True : PDFBool.False;
+            
+            // 1. Tag the logical field
+            field.acroField.dict.set(PDFName.of('IsCritical'), isCriticalBool);
+
+            // 2. Tag the physical widget(s)
+            const widgets = field.acroField.getWidgets();
+            widgets.forEach(widget => {
+                widget.dict.set(PDFName.of('IsCritical'), isCriticalBool);
+            });
+
+            if (fieldData.required) field.enableRequired();
         });
 
+        // Finalize Appearance
         const acroForm = pdfDoc.catalog.lookup(PDFName.of('AcroForm'));
         if (acroForm) acroForm.set(PDFName.of('NeedAppearances'), PDFBool.True);
+        form.updateFieldAppearances(helveticaFont);
 
         const pdfBytes = await pdfDoc.save();
         res.setHeader('Content-Type', 'application/pdf');
