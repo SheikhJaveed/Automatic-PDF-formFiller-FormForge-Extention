@@ -62,7 +62,7 @@ It leverages **Computer Vision (OpenCV)** and **PDF Text Analysis** to detect gr
 Navigate to the `server` directory and install dependencies.
 
 ```bash
-cd server
+cd backend
 
 # 1. Install Node dependencies
 npm install
@@ -78,7 +78,7 @@ mkdir uploads
 ### 2. Frontend Setup
 Open a new terminal, navigate to the client directory.
 ```
-cd client
+cd frontend
 
 # 1. Install dependencies
 npm install
@@ -89,13 +89,13 @@ npm run dev
 ### 3. Running the App
 Start Backend:
 ```
-# In the server/ directory
+# In the backend/ directory
 node server.js
 Server runs on port 5000.
 ```
 Start Frontend:
 ```
-# In the client/ directory
+# In the frontend/ directory
 npm run dev
 ```
 
@@ -129,3 +129,4 @@ Your existing fields will remain on screen — simply drag them to fit the new t
 ## 4. Download
 - Click **Download**.
 - The backend will generate a standard PDF with **AcroForms**, compatible with **Adobe Acrobat**, **Chrome**, and **Edge**.
+
